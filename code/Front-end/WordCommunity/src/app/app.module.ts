@@ -6,10 +6,14 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './components/login/login.component';
+import { TranslateTextComponent } from './components/translate-text/translate-text.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    TranslateTextComponent
   ],
   imports: [
     BrowserModule,
