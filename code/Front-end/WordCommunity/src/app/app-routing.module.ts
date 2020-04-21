@@ -5,7 +5,12 @@ import { TranslateTextComponent } from './components/translate-text/translate-te
 
 
 const routes: Routes = [
-  {path:'login', component:LoginComponent },
+  {
+    path: '',
+    redirectTo: 'login',
+    pathMatch: 'full'
+  },
+  {path:'login', component:LoginComponent }, 
   {path:'translate', component: TranslateTextComponent },
 ];
 
