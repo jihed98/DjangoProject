@@ -4,6 +4,7 @@ Descrizione Progetto:
     le caratteristiche elaborate sono consultabili dagli utenti.
 
 Gruppo: Team 1
+
 Persone:
     Andrea Emiliano Donato matr.119591
     Federico Tani   matr.122584
