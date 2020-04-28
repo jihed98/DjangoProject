@@ -6,17 +6,18 @@ Descrizione Progetto:
 Gruppo: Team 1
 
 Persone:
-    Andrea Emiliano Donato matr.119591
-    Federico Tani   matr.122584
-    Matteo Cremonini    matr.91889
-    Jihed Fatnassi  matr.122089
-    Filippo Principato  matr.119379
-    Ivan Cotti  matr.106646
+    Andrea Emiliano Donato matr.119591; 
+    Federico Tani   matr.122584; 
+    Matteo Cremonini    matr.91889; 
+    Jihed Fatnassi  matr.122089; 
+    Filippo Principato  matr.119379; 
+    Ivan Cotti  matr.106646; 
 
-Ruoli non ancora assegnati
+Ruoli non ancora assegnati.
+
 Internamente ci siamo divisi in due gruppi:
-    Front-End: Tani, Fatnassi, Principato
-    Back-End: Donato, Cotti, Cremonini
+    Front-End: Tani, Fatnassi, Principato; 
+    Back-End: Donato, Cotti, Cremonini; 
     
     
     
