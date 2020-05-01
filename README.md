@@ -13,7 +13,10 @@ Persone:
     Filippo Principato  matr.119379; 
     Ivan Cotti  matr.106646; 
 
-Ruoli non ancora assegnati.
+Ruoli:
+    Product Owner: Jihed Fatnassi   
+    Scrum Master: Ivan Cotti    
+    Developer Team: Tani, Donato, Principato, Cremonini 
 
 Internamente ci siamo divisi in due gruppi:
     Front-End: Tani, Fatnassi, Principato; 
