@@ -13,7 +13,7 @@ Persone:
     Filippo Principato  matr.119379; 
     Ivan Cotti  matr.106646; 
 
-Ruoli:
+Ruoli:  
     Product Owner: Jihed Fatnassi   
     Scrum Master: Ivan Cotti    
     Developer Team: Tani, Donato, Principato, Cremonini 
