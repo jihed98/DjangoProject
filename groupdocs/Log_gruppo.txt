@@ -1,0 +1,1 @@
+1/5 - Finita retrospettiva, preparazione pycharm e django.
