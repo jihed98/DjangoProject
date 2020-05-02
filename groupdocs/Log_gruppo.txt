@@ -1,1 +1,2 @@
 1/5 - Finita retrospettiva, preparazione pycharm e django.
+2/5 - Impostato il progetto in pycharm per lavorare in team
