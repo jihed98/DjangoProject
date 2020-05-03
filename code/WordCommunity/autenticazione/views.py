@@ -5,13 +5,12 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import CreateView
 
-from autenticazione.forms import PersonCrispyForm
+from autenticazione.forms import  RegisterForm
 
 
 class UserCreateView(CreateView):
-    form_class = UserCreationForm
     template_name = 'registration/create_user.html'
-    form_class = PersonCrispyForm
+    form_class = RegisterForm
     success_url = reverse_lazy('autenticazione:registration-fake')
 
 
