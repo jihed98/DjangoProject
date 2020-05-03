@@ -31,14 +31,14 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
-   'autenticazione.apps.AutenticazioneConfig',
+    'autenticazione.apps.AutenticazioneConfig',
+    'django.contrib.admin',
 ]
 
 MIDDLEWARE = [
@@ -123,3 +123,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+LOGIN_URL = '/login'
+
+LOGIN_REDIRECT_URL = 'autenticazione:registration-fake'
