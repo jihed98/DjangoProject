@@ -1,0 +1,39 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"
+</head>
+<h1>FILLO TI AMO</h1>
+<h1>Cremonini non è il vero Cremonini</h1>
+{{articoli}}
+{{utenti}}
+
+
+
+
+
+<h4>Utenti</h4>
+{% for utente in utenti%}
+    <p>{{utente.nome}} {{utente.cognome}} </p>
+{% endfor %}
+<h4>Articolo</h4>
+{% for articolo in articoli%}
+    <p>{{articolo.titolo}} {{articolo.contenuto}} </p>
+{% endfor %}
+
+
+
+
+
+<h4>Articoli di utenti</h4>
+{% for utente in utenti%}
+
+    <p>{{utente.nome}} {{utente.cognome}} </p>
+    <p>Articoli:</p>
+    {% for articolo in utente.articoli.all%}
+        <p href="{{articolo.get_absolute_url}}">{{articolo.titolo}} {{articolo.contenuto}} </p>
+        {% empty %}
+        <p>non ha scritto nessun articolo</p>
+    {% endfor %}
+
+    
+{% endfor %}
