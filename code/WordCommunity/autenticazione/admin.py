@@ -1,6 +1,6 @@
 from django.contrib import admin
 
 
-from autenticazione.models import Utente
+from autenticazione.models import  Author
 
-admin.site.register(Utente)
+admin.site.register(Author)
