@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+     New Insert
+{% endblock %}
+
+
+
+{% block content %}
+    <h1>Insert Article</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input clas="btn btn-success" type="submit" value="Create">
+    </form>
+{% endblock %}

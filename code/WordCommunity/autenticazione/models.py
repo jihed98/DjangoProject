@@ -6,7 +6,7 @@ from django.db import models
 
 
 class Author(models.Model):
-    user = models.OneToOneField(User, on_delete= models.PROTECT)
+    user = models.OneToOneField(User, on_delete=models.PROTECT)
     mail = models.EmailField()
 
     def __str__(self):
