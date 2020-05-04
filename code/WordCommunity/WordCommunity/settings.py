@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'crispy_forms',
     'autenticazione.apps.AutenticazioneConfig',
+    'articolo.apps.ArticoloConfig',
     'django.contrib.admin',
 ]
 
