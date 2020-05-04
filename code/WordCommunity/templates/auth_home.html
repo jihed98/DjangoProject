@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %} WELCOME TO WC {% endblock %}
+
+
+
+{% block content %}
+
+<p> Non sei un nostro utente?: <a class="btn btn-primary" href="{% url 'autenticazione:create-user' %}">Registrati</a></p>
+<p> Bentornato: <a class="btn btn-primary" href="{% url 'autenticazione:login' %}">Accedi</a></p>
+
+{% endblock %}
