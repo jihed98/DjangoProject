@@ -5,3 +5,4 @@
 __pycache__/
 code/WordCommunity/.idea/*
 
+code/WordCommunityClean/db.sqlite3
