@@ -2,7 +2,6 @@ from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Submit
 from django import forms
 from articolo.models import Articolo
-
 from autenticazione.models import Author
 
 
@@ -20,15 +19,17 @@ class ArticleCrispyForm(forms.ModelForm):
         fields = ('titolo',)
 
     def __init__(self, *args, **kwargs):
-        self.user = kwargs.pop('user', None)
+        self.user = kwargs.pop('user')
         super(ArticleCrispyForm, self).__init__(*args, **kwargs)
         self.helper.inputs[0].value = 'Create'
         self.helper.inputs[0].field_classes = 'btn btn-success'
 
     def save(self, commit=True):
         articolo = super(ArticleCrispyForm, self).save(commit=False)
+        print(self.user.id)
+        author = Author.objects.get(user_id=self.user.id)
         if commit:
-            articolo = Articolo.create(titolo=self.cleaned_data['titolo'], author=self.cleaned_data['user'])
+            articolo = Articolo.create(titolo=self.cleaned_data['titolo'], author=author)
             articolo.save()
         return articolo
 

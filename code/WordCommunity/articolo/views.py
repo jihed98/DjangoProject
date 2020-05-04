@@ -8,18 +8,25 @@ from articolo.forms import ArticleCrispyForm
 from articolo.models import Articolo
 
 
-class ArticleFormInsert(LoginRequiredMixin, CreateView):
+class ArticleFormInsert(CreateView):
     model = Articolo
     template_name = 'articolo/InsertArticle.html'
     form_class = ArticleCrispyForm
     success_url = reverse_lazy('articolo:detail-article')
 
-    def form_valid(self, form):
-        author = form.instance.author
-        author.user = self.request.user
-        return super().form_valid(form)
+    '''
+    TRAMITE QUESTO BECCO LO USER SU FORM NELL'INIT
+    '''
+    def get_form_kwargs(self):
+        kwargs = super(ArticleFormInsert, self).get_form_kwargs()
+        kwargs['user'] = self.request.user
+        return kwargs
 
 
 class ArticleDetail(DetailView):
     model = Articolo
     template_name = 'articolo/articleDetail.html'
+
+''' USO QUESTO SENZA IL PK PERCHÈ MI DAVA PROBLEMI'''
+def detail (request):
+    return render(request, 'articolo/articleDetail.html')
