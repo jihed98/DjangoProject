@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+{% block head_title %}{{ block.super}} - {{articolo.titolo}} {% endblock head_title %}
+
+
+{% block content %}
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{articolo.titolo}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Creato da: @{{articolo.autore_articolo}}</h6>
+      <p class="card-text">{{articolo.descrizione}}</p>
+    </div>
+  </div>
+        
+{% endblock content %}

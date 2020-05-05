@@ -37,7 +37,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'crispy_forms',
+
+    'forum',
+    'core',
+    'accounts'
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -54,7 +62,11 @@ ROOT_URLCONF = 'WordCommunity.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
+        'DIRS': [os.path.join(BASE_DIR, 'templates'),
+                os.path.join(BASE_DIR, 'accounts/templates'),
+                os.path.join(BASE_DIR, 'core/templates'),
+                os.path.join(BASE_DIR, 'forum/templates'),
+        ]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -104,7 +116,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'it'
 
 TIME_ZONE = 'UTC'
 
@@ -119,3 +131,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+#DOPO IL LOGIN DI SOLITO MI MANDA NEL PATH ACCOUNTS/PROFILE, NOI INVECE VOGLIAMO
+#MANDARLO NELLA HOMEPAGE
+LOGIN_REDIRECT_URL ="/"

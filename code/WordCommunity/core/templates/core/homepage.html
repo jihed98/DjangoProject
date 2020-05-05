@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<a href="forum/nuovo-articolo/">Crea un nuovo articolo</a>
+<br>
+{% for articolo in lista_articoli %}
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title"><a href="{{articolo.get_absolute_url}}">{{articolo.titolo}}</a></h5>
+      <h6 class="card-subtitle mb-2 text-muted">Creato da: @{{articolo.autore_articolo}}</h6>
+      <p class="card-text">{{articolo.descrizione}}</p>
+    </div>
+  </div>
+{% endfor %}
+
+{% endblock content %}
