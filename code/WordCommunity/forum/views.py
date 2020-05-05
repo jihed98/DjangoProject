@@ -11,6 +11,9 @@ class CreaArticolo(CreateView):
     success_url = "/"
     def form_valid(self, form):
         form.instance.autore_articolo_id = self.request.user.pk
+        print(form.instance.descrizione)
+        #qua si deve inserire lo script per la divisione in parole del testo
+        form.instance.descrizione="test jihed"
         return super().form_valid(form)
 
 def visualizzaArticolo(request, pk):
