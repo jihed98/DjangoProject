@@ -133,7 +133,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'wordcommunity9999@gmail.com'
+EMAIL_HOST_PASSWORD = '18isdawae'
+
 STATIC_URL = '/static/'
 #DOPO IL LOGIN DI SOLITO MI MANDA NEL PATH ACCOUNTS/PROFILE, NOI INVECE VOGLIAMO
 #MANDARLO NELLA HOMEPAGE
 LOGIN_REDIRECT_URL ="/"
+
+
