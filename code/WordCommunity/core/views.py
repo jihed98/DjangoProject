@@ -13,9 +13,10 @@ class HomeView(ListView):
     context_object_name ="lista_articoli"
 
 
-def userProfileView(request, username):
+def userProfileView(request, username, ):
     user = get_object_or_404(User, username=username)
-    context = {"user":user}
+    articoli_utente = Articolo.objects.filter(autore_articolo=user.pk).order_by("-pk")
+    context = {"user":user, "articoli_utente":articoli_utente}
     return render(request, 'core/user_profile.html', context)
 
 

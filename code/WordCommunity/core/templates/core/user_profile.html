@@ -1,5 +1,18 @@
 {% extends 'base.html' %}
 {% block content %}
-    
-<h1>UserProfile : {{user}}</h1>
+
+    <h1>UserProfile : {{user}}</h1>
+
+    <div class="card-body">
+        {% for articolo in articoli_utente %}
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="{{articolo.get_absolute_url}}">{{articolo.titolo}}</a></h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Creato da: @{{articolo.autore_articolo}}</h6>
+
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
 {% endblock content %}
