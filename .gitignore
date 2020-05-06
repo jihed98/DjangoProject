@@ -6,3 +6,4 @@ __pycache__/
 code/WordCommunity/.idea/*
 
 code/WordCommunityClean/db.sqlite3
+code/WordCommunity/db.sqlite3
