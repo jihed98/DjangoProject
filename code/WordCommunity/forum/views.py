@@ -26,5 +26,6 @@ class CreaArticolo(CreateView):
 def visualizzaArticolo(request, pk):
     articolo = get_object_or_404(Articolo, pk=pk)
     text = json.loads(articolo.descrizione)
-    context = {"articolo": articolo, "parole": text}
+    indice = textProcessor.getIndex(text)
+    context = {"articolo": articolo, "parole": text, "index":indice}
     return render(request, "forum/articolo.html", context)

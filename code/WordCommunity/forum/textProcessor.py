@@ -18,6 +18,19 @@ def textToDict(text):
             d[word] = 0
         d[word] += 1
 
-    #print("\nDizionario da salvare: ", d)
+    # print("\nDizionario da salvare: ", d)
 
     return d
+
+
+def getIndex(d):
+    out = 0.0
+    for i in d:
+        val = d[i]
+        for j in range(val):
+            out += max(1, 20-j*5.3)
+
+    out /= 6.9
+    return int(round(out))
+
+
