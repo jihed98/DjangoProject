@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
-from django.views.generic.edit import CreateView
+from django.urls import reverse_lazy
+from django.views.generic.edit import CreateView, UpdateView
 from .models import Articolo
 from . import textProcessor
 import json
@@ -29,3 +30,6 @@ def visualizzaArticolo(request, pk):
     indice = textProcessor.getIndex(text)
     context = {"articolo": articolo, "parole": text, "index":indice}
     return render(request, "forum/articolo.html", context)
+
+
+

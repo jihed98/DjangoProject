@@ -9,4 +9,6 @@ urlpatterns = [
     path('cerca/', login_required(views.cerca), name='cerca'),
     path('articolo/<int:pk>/delete/', login_required(views.ArticleDelete.as_view()),  name='articolo-delete'),
     path('altriuser/<username>/', login_required(views.altriuserProfileView),  name='altriuser-profile'),
+    path('articolo/<int:pk>/modifica/', login_required(views.ArticoloChange.as_view()), name="articolo-modifica"),
+
 ]

@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.models import User
 from django.urls import reverse_lazy
-from django.views.generic import DeleteView
+from django.views.generic import DeleteView, UpdateView
 from django.views.generic.list import ListView
 from forum.models import Articolo
 
@@ -45,7 +45,12 @@ class UserList(ListView):
 class ArticleDelete(DeleteView):
     model = Articolo
     template_name = 'core/deletearticle.html'
-    success_url = reverse_lazy('homepage')
+
+    def get_success_url(self):
+        articleid = self.kwargs['pk']
+        articolo = get_object_or_404(Articolo, id=articleid)
+        user = get_object_or_404(User, username=articolo.autore_articolo)
+        return reverse_lazy('user_profile', kwargs={'username': user})
 
 def altriuserProfileView(request, username, ):
     user = get_object_or_404(User, username=username)
@@ -53,3 +58,14 @@ def altriuserProfileView(request, username, ):
     context = {"user":user, "articoli_utente":articoli_utente}
     return render(request, 'core/user_profile.html', context)
 
+
+class ArticoloChange(UpdateView):
+    model = Articolo
+    fields =  ('titolo',)
+    template_name = 'core/modifica.html'
+
+    def get_success_url(self):
+        articleid = self.kwargs['pk']
+        articolo = get_object_or_404(Articolo, id=articleid)
+        user = get_object_or_404(User, username=articolo.autore_articolo)
+        return reverse_lazy('user_profile', kwargs={'username': user})

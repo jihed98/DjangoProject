@@ -8,7 +8,7 @@
     <p>Titolo dell'articolo: {{ object.titolo }}</p>
     <form method="post">{%  csrf_token %}
        <input class="btn btn-danger" type="submit" value="Delete">
-        <a class="btn btn-secondary" href="{%  url 'homepage' %}">Cancel</a>
+        <a class="btn btn-secondary" href="{%  url 'user_profile' username=request.user.username %}">Cancel</a>
     </form>
 
 
