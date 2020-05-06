@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>UserProfile : {{user}}</h1>
+
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+
+
+        <table>
+            <td> <b>Articolo:</b></td>
+            <th><td><b></b></td></th>
+
+            {% for articolo in articoli_utente%}
+                <tr><td><h5 class="card-title">{{articolo.titolo}}</h5>  <h6 class="card-subtitle mb-2 text-muted">Creato da: @{{articolo.autore_articolo}}</h6></td>
+                <td> <a  class="btn btn-danger" href = " {%  url 'articolo-delete' articolo.id %}">
+                <i class='far fa-trash-alt'></i>
+             </a></td>
+                </tr>
+
+            {% endfor %}
+
+        </table>
+
+
+    </div>
+  </div>
+
+{% endblock content %}
+

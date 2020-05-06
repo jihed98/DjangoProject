@@ -4,7 +4,7 @@
 <h1>List Utenti</h1>
 <hr>
 {% for utente in object_list %}
-<p><a href="{% url 'user_profile' username=utente.username %}"><strong>{{utente.username}}</strong></a></p>
+<p><a href="{% url 'altriuser-profile' username=utente.username %}"><strong>{{utente.username}}</strong></a></p>
 
 {% endfor %}
 

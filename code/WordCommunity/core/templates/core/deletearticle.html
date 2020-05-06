@@ -1,0 +1,19 @@
+{%  extends 'base.html' %}
+{%  load static %}
+{% block title %}Language Delete{%  endblock %}
+
+{% block content %}
+    <h1>Delete Article</h1>
+    <p> Vuoi davvero cancellare l' articolo?</p>
+    <p>Titolo dell'articolo: {{ object.titolo }}</p>
+    <form method="post">{%  csrf_token %}
+       <input class="btn btn-danger" type="submit" value="Delete">
+        <a class="btn btn-secondary" href="{%  url 'homepage' %}">Cancel</a>
+    </form>
+
+
+
+
+
+{#    <img src="{%  static 'img/GVFC-acc.jpg' %}">#}
+{% endblock %}
