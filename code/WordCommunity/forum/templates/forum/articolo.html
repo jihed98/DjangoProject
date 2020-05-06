@@ -9,8 +9,23 @@
     <div class="card-body">
       <h5 class="card-title">{{articolo.titolo}}</h5>
       <h6 class="card-subtitle mb-2 text-muted">Creato da: @{{articolo.autore_articolo}}</h6>
-      <p class="card-text">{{articolo.descrizione}}</p>
-      <p class="card-text">{{articolo.data_creazione}}</p>
+        <p class="card-text">{{articolo.data_creazione}}</p>
+
+
+        <table>
+            <td> <b>Termine:</b></td>
+            <th><td><b>Frequenza:</b></td></th>
+
+            {% for p, val in parole.items%}
+                <tr><td>{{p}}</td>
+                <td>{{val}}</td>
+                </tr>
+
+            {% endfor %}
+
+        </table>
+
+
     </div>
   </div>
         
