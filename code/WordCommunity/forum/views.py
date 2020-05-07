@@ -11,7 +11,7 @@ import json
 
 class CreaArticolo(CreateView):
     model = Articolo
-    fields = ["titolo", "descrizione", "lingua_sorgente"]
+    fields = ["titolo", "descrizione",]
     template_name = "forum/crea_articolo.html"
     success_url = "/"
 

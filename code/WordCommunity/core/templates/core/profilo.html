@@ -13,7 +13,8 @@
             <th><td><b></b></td></th>
 
             {% for articolo in articoli_utente%}
-                <tr><td><h5 class="card-title">{{articolo.titolo}}</h5>  <h6 class="card-subtitle mb-2 text-muted">Creato da: @{{articolo.autore_articolo}}</h6></td>
+            <tr><td><h5 class="card-title"><a href="{{articolo.get_absolute_url}}">{{articolo.titolo}}</h5> </a>
+                    <h6 class="card-subtitle mb-2 text-muted">Creato da: @{{articolo.autore_articolo}}</h6></td>
                 <td> <a  class="btn btn-danger" href = " {%  url 'articolo-delete' articolo.id %}">
                 <i class='far fa-trash-alt'></i>
              </a></td>
