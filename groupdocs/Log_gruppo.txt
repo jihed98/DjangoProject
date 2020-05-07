@@ -3,3 +3,5 @@
 3/5 17:00-18:00 - Lavorato su registrazione e login
 4/5 17:00-18:00 - Riunione generale, progresso registrazione e login, database.
 5/5 17:00-19:00 - Divisione del lavoro in 3 sotto-team
+6/5 17:00-19:00 - Riunione generale, registrazione e login fatto, database iniziato, inserimento ed eliminazione degli articoli
+7/5 15:00-19:00 - Finito database, miglioramento user interface e grafica, test, miglioramento indice complessità
