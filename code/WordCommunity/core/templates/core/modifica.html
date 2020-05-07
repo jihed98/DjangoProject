@@ -1,0 +1,19 @@
+{%  extends 'base.html' %}
+{%  load static %}
+{%  load crispy_forms_tags%}
+
+
+{% block content %}
+    <h1>Vuoi cambiare  {{ object.titolo }} </h1>
+       <form method="post">{%  csrf_token %}
+        {{ form.as_p }}
+        <input class="btn btn-success" type="submit" value="Save">
+           <a class="btn btn-secondary" href="{%  url 'user_profile' username=request.user.username %}">Cancel</a>
+      </form>
+
+
+
+
+
+
+{% endblock content %}

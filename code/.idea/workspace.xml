@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5501ec2c-69b6-4a89-b9d9-9e249b5f4611" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/code.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WordCommunity/core/templates/core/profilo.html" beforeDir="false" afterPath="$PROJECT_DIR$/WordCommunity/core/templates/core/profilo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WordCommunity/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/WordCommunity/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WordCommunity/forum/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/WordCommunity/forum/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WordCommunity/forum/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/WordCommunity/forum/views.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1bXKpaBPMTO7JDieFwoIl5BKYEm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5501ec2c-69b6-4a89-b9d9-9e249b5f4611" name="Default Changelist" comment="" />
+      <created>1588773181177</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588773181177</updated>
+      <workItem from="1588773182277" duration="1501000" />
+      <workItem from="1588785894414" duration="21000" />
+      <workItem from="1588794560580" duration="74000" />
+      <workItem from="1588800921897" duration="611000" />
+      <workItem from="1588853989022" duration="288000" />
+      <workItem from="1588854324132" duration="424000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="518" y="395" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588773391901">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="518" y="395" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/-1920.199.1920.1040@0.0.2560.1400" timestamp="1588773391901" />
+    <state x="619" y="207" width="424" height="482" key="FileChooserDialogImpl" timestamp="1588854363686">
+      <screen x="65" y="24" width="1535" height="876" />
+    </state>
+    <state x="619" y="207" width="424" height="482" key="FileChooserDialogImpl/65.24.1535.876@65.24.1535.876" timestamp="1588854363686" />
+    <state x="65" y="98" key="SettingsEditor" timestamp="1588854222521">
+      <screen x="65" y="24" width="1535" height="876" />
+    </state>
+    <state x="65" y="98" key="SettingsEditor/65.24.1535.876@65.24.1535.876" timestamp="1588854222521" />
+    <state x="843" y="584" key="cloudConfig.PluginsDialog" timestamp="1588773228226">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="843" y="584" key="cloudConfig.PluginsDialog/0.0.2560.1400/-1920.199.1920.1040@0.0.2560.1400" timestamp="1588773228226" />
+    <state x="936" y="584" key="cloudConfig.SelfSettingsDialog" timestamp="1588773214810">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="936" y="584" key="cloudConfig.SelfSettingsDialog/0.0.2560.1400/-1920.199.1920.1040@0.0.2560.1400" timestamp="1588773214810" />
+  </component>
+</project>

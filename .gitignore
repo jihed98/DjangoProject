@@ -1,6 +1,11 @@
 
+
 *.log
 *.pyc
 __pycache__/
 code/WordCommunity/.idea/*
-groupdocs/Log_gruppo.txt
+
+code/WordCommunityClean/db.sqlite3
+code/WordCommunity/db.sqlite3
+.vscode/settings.json
+code/WordCommunity/db.sqlite3
