@@ -5,14 +5,14 @@
 
 
 {% block content %}
-<div class="card" style="width: 18rem;">
-  <div class="card-body">
+<div class="card" style="width: 45rem ; height: 35rem">
+  <div class="card-body" style="width: 100% ;">
     <h5 class="card-title">{{articolo.titolo}}</h5>
     <h6 class="card-subtitle mb-2 text-muted">Creato da: @{{articolo.autore_articolo}}</h6>
     <p class="card-text">{{articolo.data_creazione}}</p>
 
     <p>Indice: {{index}}</p>
-    <div style="overflow-y:auto;width: 100%;height: 15rem;overflow: scroll;">
+    <div style="overflow-y:auto;width: 100%;height: 25rem;overflow: scroll;">
       <table id="example" class="table table-striped table-bordered" style="width:100%">
         <thead>
           <tr>

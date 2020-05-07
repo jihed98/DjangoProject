@@ -6,7 +6,8 @@
 <div class="card shadow mb-4">
   <div class="card-header py-3">
     <h6 class="m-0 font-weight-bold text-primary"><a href="{{articolo.get_absolute_url}}">{{articolo.titolo}}</a></h6>
-    <h8 class="card-subtitle mb-2 text-muted">Creato da: @<a href="{% url 'user_profile' username=request.user.username %}">{{articolo.autore_articolo}}</a></h6>
+    <h8 class="card-subtitle mb-2 text-muted">Creato da:<a href="{% url 'altriuser-profile' username=articolo.autore_articolo %}">@{{articolo.autore_articolo}}</a></h8>
+     <p class="text-muted">{{ articolo.data_creazione|timesince }}</p>
   </div>
   <div class="card-body">
 {{articolo.descrizione}}

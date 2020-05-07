@@ -5,16 +5,29 @@
 
 {% block head_title %}{{ block.super}} - Registrati nella Comminuty{% endblock head_title %}
 {% block content %}
-<div class="row justify-content-center">
-    <div class="col-6 text-center">
-        <h2>Registrati su WordComminuty!</h2>
-        <form class="" method="POST" novalidate>
+<div class="card-body p-0">
+        <!-- Nested Row within Card Body -->
+        <div class="row">
+          <div class="col-lg-5 d-none d-lg-block bg-register-image" style="background: url(https://cdn.dribbble.com/users/1019/screenshots/6350597/unused_planet_4x.png);
+    background-position: center;
+    background-size: cover;"></div>
+          <div class="col-lg-7">
+            <div class="p-5">
+              <div class="text-center">
+                <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
+              </div>
+             <form class="" method="POST" novalidate>
             {% csrf_token %}
             {{form|crispy}}
             <input type="submit" class="btn btn-success" value="Crea Account">
         </form>
-    </div>
+              <hr>
+              <div class="text-center">
+                <a class="small" href="{% url 'login' %}">Already have an account? Login!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-</div>
-        
-{% endblock content %}
+      {% endblock content %}
