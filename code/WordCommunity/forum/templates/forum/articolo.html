@@ -6,28 +6,38 @@
 
 {% block content %}
 <div class="card" style="width: 18rem;">
-    <div class="card-body">
-      <h5 class="card-title">{{articolo.titolo}}</h5>
-      <h6 class="card-subtitle mb-2 text-muted">Creato da: @{{articolo.autore_articolo}}</h6>
-        <p class="card-text">{{articolo.data_creazione}}</p>
+  <div class="card-body">
+    <h5 class="card-title">{{articolo.titolo}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Creato da: @{{articolo.autore_articolo}}</h6>
+    <p class="card-text">{{articolo.data_creazione}}</p>
 
-        <p>Indice: {{index}}</p>
+    <p>Indice: {{index}}</p>
+    <div style="overflow-y:auto;width: 100%;height: 15rem;overflow: scroll;">
+      <table id="example" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+          <tr>
+            <th scope="col">Termine:</th>
+            <th scope="col">Frequenza:</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for p, val in parole.items%}
+          <tr scope="row">
+            <td>{{p}}</td>
+            <td>{{val}}</td>
+          </tr>
 
-        <table>
-            <td> <b>Termine:</b></td>
-            <th><td><b>Frequenza:</b></td></th>
-
-            {% for p, val in parole.items%}
-                <tr><td>{{p}}</td>
-                <td>{{val}}</td>
-                </tr>
-
-            {% endfor %}
-
-        </table>
-
-
+          {% endfor %}
+        </tbody>
+      </table>
     </div>
+
   </div>
-        
+</div>
+<script>
+  $(document).ready(function () {
+      $('#example').DataTable();
+    });
+</script>
+
 {% endblock content %}
