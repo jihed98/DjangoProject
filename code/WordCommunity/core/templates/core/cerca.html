@@ -22,7 +22,11 @@
             <hr>
             {% if users %}
                 {% for utente in users %}
-                    <p><a href="{% url 'user_profile' username=utente.username %}">@{{ utente }}</a></p>
+                   {% if  utente.pk == request.user.pk %}
+                    <p><a href="{% url 'user_profile' username=request.user.username %}">@{{ utente }}</a></p>
+                    {% else %}
+                        <p><a href="{% url 'altriuser-profile' username=utente.username %}">@{{ utente }}</a></p>
+                     {% endif %}
                 {% endfor %}
             {% else %}
                 <p>---</p>
