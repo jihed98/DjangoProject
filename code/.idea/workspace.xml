@@ -2,20 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5501ec2c-69b6-4a89-b9d9-9e249b5f4611" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/WordCommunity/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WordCommunity/forum/test_models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/code.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordCommunity/core/templates/core/profilo.html" beforeDir="false" afterPath="$PROJECT_DIR$/WordCommunity/core/templates/core/profilo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordCommunity/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/WordCommunity/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WordCommunity/forum/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/WordCommunity/forum/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordCommunity/forum/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/WordCommunity/forum/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Andrea Donato &lt;241589@studenti.unimore.it&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1bXKpaBPMTO7JDieFwoIl5BKYEm" />
@@ -29,7 +39,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/WordCommunity/forum" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -70,26 +85,47 @@
       <workItem from="1588794560580" duration="74000" />
       <workItem from="1588800921897" duration="611000" />
       <workItem from="1588853989022" duration="288000" />
-      <workItem from="1588854324132" duration="424000" />
+      <workItem from="1588854324132" duration="592000" />
+      <workItem from="1588860484841" duration="2320000" />
     </task>
+    <task id="LOCAL-00001" summary="modified articolo model and fix bug">
+      <created>1588854893590</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588854893590</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="modified articolo model and fix bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified articolo model and fix bug" />
   </component>
   <component name="WindowStateProjectService">
     <state x="518" y="395" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588773391901">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="518" y="395" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/-1920.199.1920.1040@0.0.2560.1400" timestamp="1588773391901" />
+    <state x="65" y="24" key="CommitChangelistDialog2" timestamp="1588854893378">
+      <screen x="65" y="24" width="1535" height="876" />
+    </state>
+    <state x="65" y="24" key="CommitChangelistDialog2/65.24.1535.876@65.24.1535.876" timestamp="1588854893378" />
     <state x="619" y="207" width="424" height="482" key="FileChooserDialogImpl" timestamp="1588854363686">
       <screen x="65" y="24" width="1535" height="876" />
     </state>
     <state x="619" y="207" width="424" height="482" key="FileChooserDialogImpl/65.24.1535.876@65.24.1535.876" timestamp="1588854363686" />
-    <state x="65" y="98" key="SettingsEditor" timestamp="1588854222521">
+    <state x="65" y="98" key="SettingsEditor" timestamp="1588861788468">
       <screen x="65" y="24" width="1535" height="876" />
     </state>
-    <state x="65" y="98" key="SettingsEditor/65.24.1535.876@65.24.1535.876" timestamp="1588854222521" />
+    <state x="65" y="98" key="SettingsEditor/65.24.1535.876@65.24.1535.876" timestamp="1588861788468" />
+    <state x="65" y="199" key="Vcs.Push.Dialog.v2" timestamp="1588854905790">
+      <screen x="65" y="24" width="1535" height="876" />
+    </state>
+    <state x="65" y="199" key="Vcs.Push.Dialog.v2/65.24.1535.876@65.24.1535.876" timestamp="1588854905790" />
     <state x="843" y="584" key="cloudConfig.PluginsDialog" timestamp="1588773228226">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
