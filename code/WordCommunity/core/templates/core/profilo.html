@@ -19,8 +19,8 @@
 
     <div class="card " style="display: inline-block;width: 33%;">
         <div class="card-body">
-        <h4 class="card-title"><a href="{{articolo.get_absolute_url}}">{{articolo.titolo}}</h5> </a>
-        <h5 class="card-subtitle mb-2 text-muted">Creato da: @{{articolo.autore_articolo}}</h6>
+        <h4 class="card-title"><a href="{{articolo.get_absolute_url}}">{{articolo.titolo}}</h4> </a>
+        <h5 class="card-subtitle mb-2 text-muted">Creato da: @{{articolo.autore_articolo}}</h5>
         <h6 class="card-subtitle mb-2 text-muted">{{articolo.data_creazione}} </h6>
         <br>
             <a class="btn btn-danger float-right" href=" {%  url 'articolo-delete' articolo.id %}">
