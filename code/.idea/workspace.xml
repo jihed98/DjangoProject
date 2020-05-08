@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5501ec2c-69b6-4a89-b9d9-9e249b5f4611" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WordCommunity/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WordCommunity/forum/test_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/code.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordCommunity/forum/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/WordCommunity/forum/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WordCommunity/accounts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/WordCommunity/accounts/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WordCommunity/accounts/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/WordCommunity/accounts/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WordCommunity/core/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/WordCommunity/core/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WordCommunity/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/WordCommunity/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WordCommunity/forum/test_models.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +28,7 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1bXKpaBPMTO7JDieFwoIl5BKYEm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -86,7 +88,9 @@
       <workItem from="1588800921897" duration="611000" />
       <workItem from="1588853989022" duration="288000" />
       <workItem from="1588854324132" duration="592000" />
-      <workItem from="1588860484841" duration="2320000" />
+      <workItem from="1588860484841" duration="7322000" />
+      <workItem from="1588880171516" duration="575000" />
+      <workItem from="1588943313725" duration="5358000" />
     </task>
     <task id="LOCAL-00001" summary="modified articolo model and fix bug">
       <created>1588854893590</created>
@@ -95,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588854893590</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="prova test">
+      <created>1588862818819</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588862818819</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,29 +114,34 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="modified articolo model and fix bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified articolo model and fix bug" />
+    <MESSAGE value="prova test" />
+    <option name="LAST_COMMIT_MESSAGE" value="prova test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="518" y="395" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588773391901">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="518" y="395" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/-1920.199.1920.1040@0.0.2560.1400" timestamp="1588773391901" />
-    <state x="65" y="24" key="CommitChangelistDialog2" timestamp="1588854893378">
+    <state x="65" y="24" key="CommitChangelistDialog2" timestamp="1588862818675">
       <screen x="65" y="24" width="1535" height="876" />
     </state>
-    <state x="65" y="24" key="CommitChangelistDialog2/65.24.1535.876@65.24.1535.876" timestamp="1588854893378" />
-    <state x="619" y="207" width="424" height="482" key="FileChooserDialogImpl" timestamp="1588854363686">
+    <state x="65" y="24" key="CommitChangelistDialog2/65.24.1535.876@65.24.1535.876" timestamp="1588862818675" />
+    <state x="619" y="207" width="424" height="482" key="FileChooserDialogImpl" timestamp="1588880743944">
       <screen x="65" y="24" width="1535" height="876" />
     </state>
-    <state x="619" y="207" width="424" height="482" key="FileChooserDialogImpl/65.24.1535.876@65.24.1535.876" timestamp="1588854363686" />
+    <state x="619" y="207" width="424" height="482" key="FileChooserDialogImpl/65.24.1535.876@65.24.1535.876" timestamp="1588880743944" />
+    <state x="218" y="84" key="MergeDialog" timestamp="1588943399575">
+      <screen x="65" y="24" width="1535" height="876" />
+    </state>
+    <state x="218" y="84" key="MergeDialog/65.24.1535.876@65.24.1535.876" timestamp="1588943399575" />
     <state x="65" y="98" key="SettingsEditor" timestamp="1588861788468">
       <screen x="65" y="24" width="1535" height="876" />
     </state>
     <state x="65" y="98" key="SettingsEditor/65.24.1535.876@65.24.1535.876" timestamp="1588861788468" />
-    <state x="65" y="199" key="Vcs.Push.Dialog.v2" timestamp="1588854905790">
+    <state x="65" y="199" key="Vcs.Push.Dialog.v2" timestamp="1588862831960">
       <screen x="65" y="24" width="1535" height="876" />
     </state>
-    <state x="65" y="199" key="Vcs.Push.Dialog.v2/65.24.1535.876@65.24.1535.876" timestamp="1588854905790" />
+    <state x="65" y="199" key="Vcs.Push.Dialog.v2/65.24.1535.876@65.24.1535.876" timestamp="1588862831960" />
     <state x="843" y="584" key="cloudConfig.PluginsDialog" timestamp="1588773228226">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -134,5 +150,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="936" y="584" key="cloudConfig.SelfSettingsDialog/0.0.2560.1400/-1920.199.1920.1040@0.0.2560.1400" timestamp="1588773214810" />
+    <state x="607" y="363" width="448" height="168" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588943356167">
+      <screen x="65" y="24" width="1535" height="876" />
+    </state>
+    <state x="607" y="363" width="448" height="168" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/65.24.1535.876@65.24.1535.876" timestamp="1588943356167" />
   </component>
 </project>
