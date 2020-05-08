@@ -21,6 +21,9 @@ class CreaArticolo(CreateView):
         # qua si deve inserire lo script per la divisione in parole del testo
         d = textProcessor.textToDict(form.instance.descrizione)
         form.instance.descrizione = json.dumps(d)
+
+        #Articolo.objects.create_articolo(form.instance.titolo, form.instance.descrizione, self.request.user)
+
         return super().form_valid(form)
 
 

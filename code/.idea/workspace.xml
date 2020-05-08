@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5501ec2c-69b6-4a89-b9d9-9e249b5f4611" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordCommunity/accounts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/WordCommunity/accounts/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordCommunity/accounts/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/WordCommunity/accounts/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordCommunity/core/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/WordCommunity/core/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WordCommunity/core/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/WordCommunity/core/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WordCommunity/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/WordCommunity/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WordCommunity/forum/test_models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WordCommunity/forum/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/WordCommunity/forum/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WordCommunity/forum/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/WordCommunity/forum/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +39,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ProgettoTW/draft" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -90,7 +89,7 @@
       <workItem from="1588854324132" duration="592000" />
       <workItem from="1588860484841" duration="7322000" />
       <workItem from="1588880171516" duration="575000" />
-      <workItem from="1588943313725" duration="5358000" />
+      <workItem from="1588943313725" duration="13850000" />
     </task>
     <task id="LOCAL-00001" summary="modified articolo model and fix bug">
       <created>1588854893590</created>
@@ -106,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588862818819</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added tests">
+      <created>1588948722442</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588948722442</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,21 +121,22 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="modified articolo model and fix bug" />
     <MESSAGE value="prova test" />
-    <option name="LAST_COMMIT_MESSAGE" value="prova test" />
+    <MESSAGE value="added tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="added tests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="518" y="395" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588773391901">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="518" y="395" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/-1920.199.1920.1040@0.0.2560.1400" timestamp="1588773391901" />
-    <state x="65" y="24" key="CommitChangelistDialog2" timestamp="1588862818675">
+    <state x="65" y="24" key="CommitChangelistDialog2" timestamp="1588948722241">
       <screen x="65" y="24" width="1535" height="876" />
     </state>
-    <state x="65" y="24" key="CommitChangelistDialog2/65.24.1535.876@65.24.1535.876" timestamp="1588862818675" />
-    <state x="619" y="207" width="424" height="482" key="FileChooserDialogImpl" timestamp="1588880743944">
+    <state x="65" y="24" key="CommitChangelistDialog2/65.24.1535.876@65.24.1535.876" timestamp="1588948722241" />
+    <state x="619" y="207" width="424" height="482" key="FileChooserDialogImpl" timestamp="1588956117513">
       <screen x="65" y="24" width="1535" height="876" />
     </state>
-    <state x="619" y="207" width="424" height="482" key="FileChooserDialogImpl/65.24.1535.876@65.24.1535.876" timestamp="1588880743944" />
+    <state x="619" y="207" width="424" height="482" key="FileChooserDialogImpl/65.24.1535.876@65.24.1535.876" timestamp="1588956117513" />
     <state x="218" y="84" key="MergeDialog" timestamp="1588943399575">
       <screen x="65" y="24" width="1535" height="876" />
     </state>
@@ -138,10 +145,10 @@
       <screen x="65" y="24" width="1535" height="876" />
     </state>
     <state x="65" y="98" key="SettingsEditor/65.24.1535.876@65.24.1535.876" timestamp="1588861788468" />
-    <state x="65" y="199" key="Vcs.Push.Dialog.v2" timestamp="1588862831960">
+    <state x="65" y="199" key="Vcs.Push.Dialog.v2" timestamp="1588948735283">
       <screen x="65" y="24" width="1535" height="876" />
     </state>
-    <state x="65" y="199" key="Vcs.Push.Dialog.v2/65.24.1535.876@65.24.1535.876" timestamp="1588862831960" />
+    <state x="65" y="199" key="Vcs.Push.Dialog.v2/65.24.1535.876@65.24.1535.876" timestamp="1588948735283" />
     <state x="843" y="584" key="cloudConfig.PluginsDialog" timestamp="1588773228226">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -150,9 +157,13 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="936" y="584" key="cloudConfig.SelfSettingsDialog/0.0.2560.1400/-1920.199.1920.1040@0.0.2560.1400" timestamp="1588773214810" />
-    <state x="607" y="363" width="448" height="168" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588943356167">
+    <state x="607" y="363" width="448" height="168" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588953496249">
       <screen x="65" y="24" width="1535" height="876" />
     </state>
-    <state x="607" y="363" width="448" height="168" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/65.24.1535.876@65.24.1535.876" timestamp="1588943356167" />
+    <state x="607" y="363" width="448" height="168" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/65.24.1535.876@65.24.1535.876" timestamp="1588953496249" />
+    <state x="495" y="191" width="672" height="678" key="search.everywhere.popup" timestamp="1588956656166">
+      <screen x="65" y="24" width="1535" height="876" />
+    </state>
+    <state x="495" y="191" width="672" height="678" key="search.everywhere.popup/65.24.1535.876@65.24.1535.876" timestamp="1588956656166" />
   </component>
 </project>
