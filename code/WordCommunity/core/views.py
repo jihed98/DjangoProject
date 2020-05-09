@@ -50,7 +50,7 @@ class ArticleDelete(DeleteView):
     model = Articolo
     template_name = 'core/deletearticle.html'
 
-    def dispatch(self, request, *args, **kwargs,):
+    def dispatch(self, request, *args, **kwargs):
         user = self.request.user
         articleid = self.kwargs['pk']
         articolo = get_object_or_404(Articolo, id=articleid)
@@ -78,7 +78,7 @@ class ArticoloChange(UpdateView):
     fields =  ('titolo',)
     template_name = 'core/modifica.html'
 
-    def dispatch(self, request, *args, **kwargs,):
+    def dispatch(self, request, *args, **kwargs):
         user = self.request.user
         articleid = self.kwargs['pk']
         articolo = get_object_or_404(Articolo, id=articleid)
