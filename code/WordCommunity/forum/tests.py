@@ -37,6 +37,33 @@ class ArticoloTestCase(TestCase):
                                                                 'descrizione' : 'Questa stringa è bellissima'})
         self.assertRedirects(response, '/')
 
+    def test_indice_base(self):
+        s1 = textProcessor.getIndex(textProcessor.textToDict("A"))
+        s2 = textProcessor.getIndex(textProcessor.textToDict("AA"))
+        s3 = textProcessor.getIndex(textProcessor.textToDict("AAA"))
+        s4 = textProcessor.getIndex(textProcessor.textToDict("A A"))
+        s5 = textProcessor.getIndex(textProcessor.textToDict("A B"))
+        s6 = textProcessor.getIndex(textProcessor.textToDict("A A A"))
+        s7 = textProcessor.getIndex(textProcessor.textToDict("A B C"))
+        s8 = textProcessor.getIndex(textProcessor.textToDict("ciao ciao ciao"))
+        s9 = textProcessor.getIndex(textProcessor.textToDict("cio com sta"))
+        s10 = textProcessor.getIndex(textProcessor.textToDict("ciaociao ciaociao ciaociao"))
+        s11 = textProcessor.getIndex(textProcessor.textToDict("ciacia comcom stasta"))
+        s12 = textProcessor.getIndex(textProcessor.textToDict("aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa"))
+        s13 = textProcessor.getIndex(textProcessor.textToDict("abcde fghij klmno"))
+        print(s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13)
+        self.assertGreater(s7, s6, "0")
+        self.assertGreater(s2, s1, "1")
+        self.assertGreater(s3, s2, "2")
+        self.assertGreater(s5, s4, "3")
+        self.assertGreater(s3, s5, "4")
+        self.assertGreater(s9, s8, "5")
+        self.assertGreater(s11, s10, "6")
+        self.assertGreater(s13, s12, "7")
+        self.assertEqual(s5, s6, "tricky equal")
+
+
+
     def test_indice (self):
         ix1 = textProcessor.getIndex(textProcessor.textToDict('Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
                                                               'Nullam et urna at justo ornare sodales.Fusce nec ex non '

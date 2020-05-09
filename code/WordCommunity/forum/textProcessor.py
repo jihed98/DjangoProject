@@ -28,7 +28,7 @@ def getIndex(d):
     for i in d:
         val = d[i]
         for j in range(val):
-            out += max(1.0, min(30.0, len(i)**1.3) / ((j*2.3)+1))
+            out += max(0.0, min(30.0, len(i)**1.3) / ((j*0.75)+1))
 
     out /= 6.9
     return round(out, 1)
