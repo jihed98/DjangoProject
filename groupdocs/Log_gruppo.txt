@@ -6,3 +6,4 @@
 6/5 17:00-19:00 - Riunione generale, registrazione e login fatto, database iniziato, inserimento ed eliminazione degli articoli
 7/5 15:00-19:00 - Finito database, miglioramento user interface e grafica, test, miglioramento indice complessità
 8/5 17:00-19:00 - Migliorata interfaccia utente, aggiunto altri test, sistemato un problema con i privilegi dell'utente
+9/5 17:00-19:00 - Test e tweaking indice di complessità, miglioramento grafica
