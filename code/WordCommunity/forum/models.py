@@ -4,18 +4,6 @@ from django.db import models
 from django.urls import reverse
 from django.contrib.auth.models import User
 
-from forum import textProcessor
-
-
-class ArticoloManager (models.Manager):
-    def create_articolo (self, titolo, descrizione, user):
-        d = textProcessor.textToDict(descrizione)
-        descrizione = json.dumps(d)
-        #calcola indice
-        self.autore_articolo_id = user.pk
-        self.create(titolo=titolo, descrizione=descrizione, autore_articolo=user)
-        #self.create(titolo=titolo, descrizione=descrizione, autore_articolo=user, indice = indice)
-
 
 class Articolo(models.Model):
     titolo = models.CharField(max_length=120)
@@ -31,8 +19,6 @@ class Articolo(models.Model):
 
     def get_absolute_url(self):
         return reverse("articolo_view", kwargs={"pk": self.pk})
-
-    objects = ArticoloManager()
 
     class Meta:
         verbose_name_plural = 'Articoli'
