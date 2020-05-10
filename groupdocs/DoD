@@ -1,0 +1,10 @@
+Definition of Done:
+
+Per considerare una storia Done abbiamo deciso che devono essere state completate 
+la codifica della funzionalità richiesta e i test di unità.
+Per quanto riguarda la codifica, tutte le To-Do di una storia devono essere
+state risolte e il codice deve essere integrato in modo ottimale con il codice 
+già esistente.
+Dopo aver verificato l'integrazione, le funzionalità devono essere testate. 
+Anche qui django viene in aiuto visto che permette nel suo framework di creare
+dei test sia per i modelli sia per le view.
