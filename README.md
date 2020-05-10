@@ -18,10 +18,7 @@ Ruoli:
     Scrum Master: Ivan Cotti    
     Developer Team: Tani, Donato, Principato, Cremonini 
 
-Internamente ci siamo divisi in due gruppi:
-    Front-End: Tani, Fatnassi, Principato; 
-    Back-End: Donato, Cotti, Cremonini; 
-    
+
     
     
 Link a Trello: https://trello.com/b/E8w6VVtr/progetto-software-2020
