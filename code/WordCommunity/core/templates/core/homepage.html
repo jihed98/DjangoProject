@@ -7,8 +7,8 @@
 <br>
 <br>
 {% for articolo in lista_articoli %}
-<div class="card  mb-4" style="background: #95e6a0;border-radius: 1.5rem;">
-  <div class="card-header py-3" style="border-bottom:none">
+<div class="card  mb-4" style="border-radius: 1.5rem;">
+  <div class="card-header py-3" style="border-radius: 1.5rem;border-bottom:none">
     <h6 class="m-0 font-weight-bold text-primary"><a href="{{articolo.get_absolute_url}}">{{articolo.titolo}}</a></h6>
     {% if articolo.autore_articolo.pk == request.user.pk %}
     <h8 class="card-subtitle mb-2 text-muted">Creato da: <a href="{% url 'user_profile' username=request.user.username %}">@{{articolo.autore_articolo}}</a></h8>
