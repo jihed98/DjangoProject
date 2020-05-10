@@ -20,7 +20,9 @@ class CreaArticolo(CreateView):
         print(form.instance.descrizione)
         # qua si deve inserire lo script per la divisione in parole del testo
         d = textProcessor.textToDict(form.instance.descrizione)
+        idx = textProcessor.getIndex(d)
         form.instance.descrizione = json.dumps(d)
+        form.instance.indice = idx
 
         #Articolo.objects.create_articolo(form.instance.titolo, form.instance.descrizione, self.request.user)
 
@@ -30,8 +32,7 @@ class CreaArticolo(CreateView):
 def visualizzaArticolo(request, pk):
     articolo = get_object_or_404(Articolo, pk=pk)
     text = json.loads(articolo.descrizione)
-    indice = textProcessor.getIndex(text)
-    context = {"articolo": articolo, "parole": text, "index":indice}
+    context = {"articolo": articolo, "parole": text}
     return render(request, "forum/articolo.html", context)
 
 
