@@ -8,3 +8,6 @@
 8/5 	17:00-19:00 - Migliorata interfaccia utente, aggiunto altri test, sistemato un problema con i privilegi dell'utente
 9/5 	17:00-19:00 - Test e tweaking indice di complessità, miglioramento grafica
 10/5	17:00-18:30 - Documentazione, sistemato bug e miglioramento grafica
+11/5	17:00-18:00 - Produzione video
+
+Totale: 18h 30m
