@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+Inserire parole da aggiungere, divise da spazi:
+<p></p>
+<form method="post">
+    {% csrf_token %}
+    {{ form}}
+    <input type="submit" class="btn btn-success"value="Update">
+</form>
+<p></p>
+<a class="btn btn-danger" href="{% url 'blacklist' pk=pk %}">Cancel</a>
+
+
+{% endblock %}
+

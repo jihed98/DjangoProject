@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block head_title %}{{ block.super}} - Crea Nuovo Articolo {% endblock head_title %}
+{% block content %}
+ <link rel="stylesheet" type="text/css" href="{% static '/css/crea_articolo.css' %}" />
+<div class="card shadow mb-4">
+    <!-- Card Header - Dropdown -->
+    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+        <h6 class="m-0 font-weight-bold ">Crea Nuovo Articolo</h6>
+        <div class="dropdown no-arrow">
+            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Card Body -->
+    <div class="card-body">
+    <form class="" method="POST" novalidate>
+        {% csrf_token %}
+        {{form|crispy}}
+        <input type="submit" class="btn btn-success" value="Crea">
+    </form>
+    </div>
+</div>
+        
+
+
+{% endblock content %}

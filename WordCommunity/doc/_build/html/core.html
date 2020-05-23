@@ -1,0 +1,465 @@
+
+<!DOCTYPE html>
+
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <title>core package &#8212; WordCommunity 1 documentazione</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/translations.js"></script>
+    <link rel="index" title="Indice" href="genindex.html" />
+    <link rel="search" title="Cerca" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="core-package">
+<h1>core package<a class="headerlink" href="#core-package" title="Link a questa intestazione">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Link a questa intestazione">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="core.migrations.html">core.migrations package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="core.migrations.html#module-core.migrations">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link a questa intestazione">¶</a></h2>
+</div>
+<div class="section" id="module-core.admin">
+<span id="core-admin-module"></span><h2>core.admin module<a class="headerlink" href="#module-core.admin" title="Link a questa intestazione">¶</a></h2>
+</div>
+<div class="section" id="module-core.apps">
+<span id="core-apps-module"></span><h2>core.apps module<a class="headerlink" href="#module-core.apps" title="Link a questa intestazione">¶</a></h2>
+<dl class="py class">
+<dt id="core.apps.CoreConfig">
+<em class="property">class </em><code class="sig-prename descclassname">core.apps.</code><code class="sig-name descname">CoreConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app_name</span></em>, <em class="sig-param"><span class="n">app_module</span></em><span class="sig-paren">)</span><a class="headerlink" href="#core.apps.CoreConfig" title="Link a questa definizione">¶</a></dt>
+<dd><blockquote>
+<div><p>Basi: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.apps.config.AppConfig</span></code></p>
+</div></blockquote>
+<dl class="py attribute">
+<dt id="core.apps.CoreConfig.name">
+<code class="sig-name descname">name</code><em class="property"> = 'core'</em><a class="headerlink" href="#core.apps.CoreConfig.name" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-core.forms">
+<span id="core-forms-module"></span><h2>core.forms module<a class="headerlink" href="#module-core.forms" title="Link a questa intestazione">¶</a></h2>
+<dl class="py class">
+<dt id="core.forms.BlacklistForm">
+<em class="property">class </em><code class="sig-prename descclassname">core.forms.</code><code class="sig-name descname">BlacklistForm</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#core.forms.BlacklistForm" title="Link a questa definizione">¶</a></dt>
+<dd><blockquote>
+<div><p>Basi: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.forms.models.ModelForm</span></code></p>
+</div></blockquote>
+<dl class="simple">
+<dt>Classe utilizzata per estendere il form predefinito di django</dt><dd><p>per la creazione della blacklist</p>
+</dd>
+</dl>
+<dl class="py class">
+<dt id="core.forms.BlacklistForm.Meta">
+<em class="property">class </em><code class="sig-name descname">Meta</code><a class="headerlink" href="#core.forms.BlacklistForm.Meta" title="Link a questa definizione">¶</a></dt>
+<dd><blockquote>
+<div><p>Basi: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</div></blockquote>
+<dl class="py attribute">
+<dt id="core.forms.BlacklistForm.Meta.fields">
+<code class="sig-name descname">fields</code><em class="property"> = ()</em><a class="headerlink" href="#core.forms.BlacklistForm.Meta.fields" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="core.forms.BlacklistForm.Meta.model">
+<code class="sig-name descname">model</code><a class="headerlink" href="#core.forms.BlacklistForm.Meta.model" title="Link a questa definizione">¶</a></dt>
+<dd><p>alias per <code class="xref py py-class docutils literal notranslate"><span class="pre">accounts.models.UserProfile</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="core.forms.BlacklistForm.base_fields">
+<code class="sig-name descname">base_fields</code><em class="property"> = {}</em><a class="headerlink" href="#core.forms.BlacklistForm.base_fields" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="core.forms.BlacklistForm.clean">
+<code class="sig-name descname">clean</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.forms.BlacklistForm.clean" title="Link a questa definizione">¶</a></dt>
+<dd><p>Hook for doing any extra form-wide cleaning after Field.clean() has been
+called on every field. Any ValidationError raised by this method will
+not be associated with a particular field; it will have a special-case
+association with the field named “__all__”.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="core.forms.BlacklistForm.declared_fields">
+<code class="sig-name descname">declared_fields</code><em class="property"> = {}</em><a class="headerlink" href="#core.forms.BlacklistForm.declared_fields" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="core.forms.BlacklistForm.media">
+<em class="property">property </em><code class="sig-name descname">media</code><a class="headerlink" href="#core.forms.BlacklistForm.media" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-core.models">
+<span id="core-models-module"></span><h2>core.models module<a class="headerlink" href="#module-core.models" title="Link a questa intestazione">¶</a></h2>
+</div>
+<div class="section" id="module-core.tests">
+<span id="core-tests-module"></span><h2>core.tests module<a class="headerlink" href="#module-core.tests" title="Link a questa intestazione">¶</a></h2>
+<dl class="py class">
+<dt id="core.tests.CoreTest">
+<em class="property">class </em><code class="sig-prename descclassname">core.tests.</code><code class="sig-name descname">CoreTest</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">methodName</span><span class="o">=</span><span class="default_value">'runTest'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#core.tests.CoreTest" title="Link a questa definizione">¶</a></dt>
+<dd><blockquote>
+<div><p>Basi: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.test.testcases.TestCase</span></code></p>
+</div></blockquote>
+<dl class="py method">
+<dt id="core.tests.CoreTest.setUp">
+<code class="sig-name descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.tests.CoreTest.setUp" title="Link a questa definizione">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="core.tests.CoreTest.test_articolo_change">
+<code class="sig-name descname">test_articolo_change</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.tests.CoreTest.test_articolo_change" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="core.tests.CoreTest.test_articolo_delete">
+<code class="sig-name descname">test_articolo_delete</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.tests.CoreTest.test_articolo_delete" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="core.tests.CoreTest.test_homepage">
+<code class="sig-name descname">test_homepage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.tests.CoreTest.test_homepage" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="core.tests.CoreTest.test_login_required">
+<code class="sig-name descname">test_login_required</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.tests.CoreTest.test_login_required" title="Link a questa definizione">¶</a></dt>
+<dd><p>test on login_required</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="core.tests.CoreTest.test_userList">
+<code class="sig-name descname">test_userList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.tests.CoreTest.test_userList" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="core.tests.CoreTest.test_userProfileView">
+<code class="sig-name descname">test_userProfileView</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.tests.CoreTest.test_userProfileView" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-core.urls">
+<span id="core-urls-module"></span><h2>core.urls module<a class="headerlink" href="#module-core.urls" title="Link a questa intestazione">¶</a></h2>
+</div>
+<div class="section" id="module-core.views">
+<span id="core-views-module"></span><h2>core.views module<a class="headerlink" href="#module-core.views" title="Link a questa intestazione">¶</a></h2>
+<dl class="py class">
+<dt id="core.views.ArticleDelete">
+<em class="property">class </em><code class="sig-prename descclassname">core.views.</code><code class="sig-name descname">ArticleDelete</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#core.views.ArticleDelete" title="Link a questa definizione">¶</a></dt>
+<dd><blockquote>
+<div><p>Basi: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.edit.DeleteView</span></code></p>
+</div></blockquote>
+<p>Eliminazione di un articolo</p>
+<dl class="py method">
+<dt id="core.views.ArticleDelete.dispatch">
+<code class="sig-name descname">dispatch</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#core.views.ArticleDelete.dispatch" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="core.views.ArticleDelete.get_success_url">
+<code class="sig-name descname">get_success_url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.views.ArticleDelete.get_success_url" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="core.views.ArticleDelete.model">
+<code class="sig-name descname">model</code><a class="headerlink" href="#core.views.ArticleDelete.model" title="Link a questa definizione">¶</a></dt>
+<dd><p>alias per <a class="reference internal" href="forum.html#forum.models.Articolo" title="forum.models.Articolo"><code class="xref py py-class docutils literal notranslate"><span class="pre">forum.models.Articolo</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="core.views.ArticleDelete.template_name">
+<code class="sig-name descname">template_name</code><em class="property"> = 'core/deletearticle.html'</em><a class="headerlink" href="#core.views.ArticleDelete.template_name" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="core.views.ArticoloChange">
+<em class="property">class </em><code class="sig-prename descclassname">core.views.</code><code class="sig-name descname">ArticoloChange</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#core.views.ArticoloChange" title="Link a questa definizione">¶</a></dt>
+<dd><blockquote>
+<div><p>Basi: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.edit.UpdateView</span></code></p>
+</div></blockquote>
+<p>Modifica il titolo dell’articolo</p>
+<dl class="py method">
+<dt id="core.views.ArticoloChange.dispatch">
+<code class="sig-name descname">dispatch</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#core.views.ArticoloChange.dispatch" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="core.views.ArticoloChange.fields">
+<code class="sig-name descname">fields</code><em class="property"> = ('titolo',)</em><a class="headerlink" href="#core.views.ArticoloChange.fields" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="core.views.ArticoloChange.get_success_url">
+<code class="sig-name descname">get_success_url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.views.ArticoloChange.get_success_url" title="Link a questa definizione">¶</a></dt>
+<dd><p>Return the URL to redirect to after processing a valid form.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="core.views.ArticoloChange.model">
+<code class="sig-name descname">model</code><a class="headerlink" href="#core.views.ArticoloChange.model" title="Link a questa definizione">¶</a></dt>
+<dd><p>alias per <a class="reference internal" href="forum.html#forum.models.Articolo" title="forum.models.Articolo"><code class="xref py py-class docutils literal notranslate"><span class="pre">forum.models.Articolo</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="core.views.ArticoloChange.template_name">
+<code class="sig-name descname">template_name</code><em class="property"> = 'core/modifica.html'</em><a class="headerlink" href="#core.views.ArticoloChange.template_name" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="core.views.HomeView">
+<em class="property">class </em><code class="sig-prename descclassname">core.views.</code><code class="sig-name descname">HomeView</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#core.views.HomeView" title="Link a questa definizione">¶</a></dt>
+<dd><blockquote>
+<div><p>Basi: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.list.ListView</span></code></p>
+</div></blockquote>
+<p>Visualizza la Homepage del sito, mostrando gli articoli in ordine dal piu recente</p>
+<dl class="py attribute">
+<dt id="core.views.HomeView.context_object_name">
+<code class="sig-name descname">context_object_name</code><em class="property"> = 'lista_articoli'</em><a class="headerlink" href="#core.views.HomeView.context_object_name" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="core.views.HomeView.queryset">
+<code class="sig-name descname">queryset</code><em class="property"> = &lt;QuerySet [&lt;Articolo: rgrgr&gt;, &lt;Articolo: rrbrb&gt;, &lt;Articolo: rrbrb&gt;, &lt;Articolo: rrbrb&gt;, &lt;Articolo: top&gt;, &lt;Articolo: fbfbfb&gt;, &lt;Articolo: fbfbfb&gt;, &lt;Articolo: dfgrshd&gt;, &lt;Articolo: ygbijno&gt;, &lt;Articolo: tfcgyvhbjnmk&gt;, &lt;Articolo: roba&gt;, &lt;Articolo: prova&gt;, &lt;Articolo: ciao&gt;, &lt;Articolo: aa&gt;, &lt;Articolo: accenti&gt;, &lt;Articolo: perchè&gt;, &lt;Articolo: articolo sensato2&gt;, &lt;Articolo: articolo sensato&gt;, &lt;Articolo: prova3&gt;, &lt;Articolo: divina commedia&gt;, '...(remaining elements truncated)...']&gt;</em><a class="headerlink" href="#core.views.HomeView.queryset" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="core.views.HomeView.template_name">
+<code class="sig-name descname">template_name</code><em class="property"> = 'core/homepage.html'</em><a class="headerlink" href="#core.views.HomeView.template_name" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="core.views.ShowBlacklist">
+<em class="property">class </em><code class="sig-prename descclassname">core.views.</code><code class="sig-name descname">ShowBlacklist</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#core.views.ShowBlacklist" title="Link a questa definizione">¶</a></dt>
+<dd><blockquote>
+<div><p>Basi: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.detail.DetailView</span></code></p>
+</div></blockquote>
+<p>Mosrtra la blacklist dell’utente</p>
+<dl class="py method">
+<dt id="core.views.ShowBlacklist.dispatch">
+<code class="sig-name descname">dispatch</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#core.views.ShowBlacklist.dispatch" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="core.views.ShowBlacklist.get_context_data">
+<code class="sig-name descname">get_context_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span></em>, <em class="sig-param"><span class="n">object_list</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#core.views.ShowBlacklist.get_context_data" title="Link a questa definizione">¶</a></dt>
+<dd><p>Insert the single object into the context dict.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="core.views.ShowBlacklist.model">
+<code class="sig-name descname">model</code><a class="headerlink" href="#core.views.ShowBlacklist.model" title="Link a questa definizione">¶</a></dt>
+<dd><p>alias per <code class="xref py py-class docutils literal notranslate"><span class="pre">accounts.models.UserProfile</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="core.views.ShowBlacklist.template_name">
+<code class="sig-name descname">template_name</code><em class="property"> = 'core/blacklist.html'</em><a class="headerlink" href="#core.views.ShowBlacklist.template_name" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="core.views.UpdateBlacklist">
+<em class="property">class </em><code class="sig-prename descclassname">core.views.</code><code class="sig-name descname">UpdateBlacklist</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#core.views.UpdateBlacklist" title="Link a questa definizione">¶</a></dt>
+<dd><blockquote>
+<div><p>Basi: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.edit.FormView</span></code></p>
+</div></blockquote>
+<p>Modifica la blacklist dell’utente</p>
+<dl class="py attribute">
+<dt id="core.views.UpdateBlacklist.form_class">
+<code class="sig-name descname">form_class</code><a class="headerlink" href="#core.views.UpdateBlacklist.form_class" title="Link a questa definizione">¶</a></dt>
+<dd><p>alias per <a class="reference internal" href="#core.forms.BlacklistForm" title="core.forms.BlacklistForm"><code class="xref py py-class docutils literal notranslate"><span class="pre">core.forms.BlacklistForm</span></code></a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="core.views.UpdateBlacklist.get_context_data">
+<code class="sig-name descname">get_context_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#core.views.UpdateBlacklist.get_context_data" title="Link a questa definizione">¶</a></dt>
+<dd><p>Insert the form into the context dict.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="core.views.UpdateBlacklist.get_form_kwargs">
+<code class="sig-name descname">get_form_kwargs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.views.UpdateBlacklist.get_form_kwargs" title="Link a questa definizione">¶</a></dt>
+<dd><p>Return the keyword arguments for instantiating the form.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="core.views.UpdateBlacklist.get_success_url">
+<code class="sig-name descname">get_success_url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#core.views.UpdateBlacklist.get_success_url" title="Link a questa definizione">¶</a></dt>
+<dd><p>Return the URL to redirect to after processing a valid form.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="core.views.UpdateBlacklist.success_url">
+<code class="sig-name descname">success_url</code><a class="headerlink" href="#core.views.UpdateBlacklist.success_url" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="core.views.UpdateBlacklist.template_name">
+<code class="sig-name descname">template_name</code><em class="property"> = 'core/modifica_blacklist.html'</em><a class="headerlink" href="#core.views.UpdateBlacklist.template_name" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="core.views.UserList">
+<em class="property">class </em><code class="sig-prename descclassname">core.views.</code><code class="sig-name descname">UserList</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#core.views.UserList" title="Link a questa definizione">¶</a></dt>
+<dd><blockquote>
+<div><p>Basi: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.list.ListView</span></code></p>
+</div></blockquote>
+<p>Lista degli utenti</p>
+<dl class="py attribute">
+<dt id="core.views.UserList.model">
+<code class="sig-name descname">model</code><a class="headerlink" href="#core.views.UserList.model" title="Link a questa definizione">¶</a></dt>
+<dd><p>alias per <code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.auth.models.User</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="core.views.UserList.template_name">
+<code class="sig-name descname">template_name</code><em class="property"> = 'core/users.html'</em><a class="headerlink" href="#core.views.UserList.template_name" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="core.views.altriuserProfileView">
+<code class="sig-prename descclassname">core.views.</code><code class="sig-name descname">altriuserProfileView</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em>, <em class="sig-param"><span class="n">username</span></em><span class="sig-paren">)</span><a class="headerlink" href="#core.views.altriuserProfileView" title="Link a questa definizione">¶</a></dt>
+<dd><p>Visualizza profilo utente esterno
+:param username: nome utente esterno da visualizzare</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="core.views.cerca">
+<code class="sig-prename descclassname">core.views.</code><code class="sig-name descname">cerca</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#core.views.cerca" title="Link a questa definizione">¶</a></dt>
+<dd><p>Barra di ricerca
+:return: ritorna la pagina che mostra i risultati della ricerca</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="core.views.deleteBlacklist">
+<code class="sig-prename descclassname">core.views.</code><code class="sig-name descname">deleteBlacklist</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em>, <em class="sig-param"><span class="n">pk</span></em><span class="sig-paren">)</span><a class="headerlink" href="#core.views.deleteBlacklist" title="Link a questa definizione">¶</a></dt>
+<dd><p>Elimina la parola dalla blacklist
+:param pk: id utente</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="core.views.userProfileView">
+<code class="sig-prename descclassname">core.views.</code><code class="sig-name descname">userProfileView</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em>, <em class="sig-param"><span class="n">username</span></em><span class="sig-paren">)</span><a class="headerlink" href="#core.views.userProfileView" title="Link a questa definizione">¶</a></dt>
+<dd><p>Visualizza la pagina del profilo utente
+:param username: nome dell’utente
+:return: rotorna la pagina del profilo utente</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-core">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-core" title="Link a questa intestazione">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">WordCommunity</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigazione</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Ricerca veloce</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Vai" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Team1.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/core.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

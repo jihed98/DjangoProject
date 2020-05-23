@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <title>forum.migrations package &#8212; WordCommunity 1 documentazione</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/translations.js"></script>
+    <link rel="index" title="Indice" href="genindex.html" />
+    <link rel="search" title="Cerca" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="forum-migrations-package">
+<h1>forum.migrations package<a class="headerlink" href="#forum-migrations-package" title="Link a questa intestazione">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link a questa intestazione">¶</a></h2>
+</div>
+<div class="section" id="module-forum.migrations.0001_initial">
+<span id="forum-migrations-0001-initial-module"></span><h2>forum.migrations.0001_initial module<a class="headerlink" href="#module-forum.migrations.0001_initial" title="Link a questa intestazione">¶</a></h2>
+<dl class="py class">
+<dt id="forum.migrations.0001_initial.Migration">
+<em class="property">class </em><code class="sig-prename descclassname">forum.migrations.0001_initial.</code><code class="sig-name descname">Migration</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">app_label</span></em><span class="sig-paren">)</span><a class="headerlink" href="#forum.migrations.0001_initial.Migration" title="Link a questa definizione">¶</a></dt>
+<dd><blockquote>
+<div><p>Basi: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.migrations.migration.Migration</span></code></p>
+</div></blockquote>
+<dl class="py attribute">
+<dt id="forum.migrations.0001_initial.Migration.dependencies">
+<code class="sig-name descname">dependencies</code><em class="property"> = [('auth', '__first__')]</em><a class="headerlink" href="#forum.migrations.0001_initial.Migration.dependencies" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="forum.migrations.0001_initial.Migration.initial">
+<code class="sig-name descname">initial</code><em class="property"> = True</em><a class="headerlink" href="#forum.migrations.0001_initial.Migration.initial" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="forum.migrations.0001_initial.Migration.operations">
+<code class="sig-name descname">operations</code><em class="property"> = [&lt;CreateModel  name='Articolo', fields=[('id', &lt;django.db.models.fields.AutoField&gt;), ('titolo', &lt;django.db.models.fields.CharField&gt;), ('descrizione', &lt;django.db.models.fields.CharField&gt;), ('lingua_sorgente', &lt;django.db.models.fields.CharField&gt;), ('data_creazione', &lt;django.db.models.fields.DateTimeField&gt;), ('autore_articolo', &lt;django.db.models.fields.related.ForeignKey&gt;)]&gt;]</em><a class="headerlink" href="#forum.migrations.0001_initial.Migration.operations" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-forum.migrations.0002_auto_20200505_1556">
+<span id="forum-migrations-0002-auto-20200505-1556-module"></span><h2>forum.migrations.0002_auto_20200505_1556 module<a class="headerlink" href="#module-forum.migrations.0002_auto_20200505_1556" title="Link a questa intestazione">¶</a></h2>
+<dl class="py class">
+<dt id="forum.migrations.0002_auto_20200505_1556.Migration">
+<em class="property">class </em><code class="sig-prename descclassname">forum.migrations.0002_auto_20200505_1556.</code><code class="sig-name descname">Migration</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">app_label</span></em><span class="sig-paren">)</span><a class="headerlink" href="#forum.migrations.0002_auto_20200505_1556.Migration" title="Link a questa definizione">¶</a></dt>
+<dd><blockquote>
+<div><p>Basi: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.migrations.migration.Migration</span></code></p>
+</div></blockquote>
+<dl class="py attribute">
+<dt id="forum.migrations.0002_auto_20200505_1556.Migration.dependencies">
+<code class="sig-name descname">dependencies</code><em class="property"> = [('forum', '0001_initial')]</em><a class="headerlink" href="#forum.migrations.0002_auto_20200505_1556.Migration.dependencies" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="forum.migrations.0002_auto_20200505_1556.Migration.operations">
+<code class="sig-name descname">operations</code><em class="property"> = [&lt;AlterField  model_name='articolo', name='descrizione', field=&lt;django.db.models.fields.TextField&gt;&gt;]</em><a class="headerlink" href="#forum.migrations.0002_auto_20200505_1556.Migration.operations" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-forum.migrations.0003_auto_20200505_2007">
+<span id="forum-migrations-0003-auto-20200505-2007-module"></span><h2>forum.migrations.0003_auto_20200505_2007 module<a class="headerlink" href="#module-forum.migrations.0003_auto_20200505_2007" title="Link a questa intestazione">¶</a></h2>
+<dl class="py class">
+<dt id="forum.migrations.0003_auto_20200505_2007.Migration">
+<em class="property">class </em><code class="sig-prename descclassname">forum.migrations.0003_auto_20200505_2007.</code><code class="sig-name descname">Migration</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">app_label</span></em><span class="sig-paren">)</span><a class="headerlink" href="#forum.migrations.0003_auto_20200505_2007.Migration" title="Link a questa definizione">¶</a></dt>
+<dd><blockquote>
+<div><p>Basi: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.migrations.migration.Migration</span></code></p>
+</div></blockquote>
+<dl class="py attribute">
+<dt id="forum.migrations.0003_auto_20200505_2007.Migration.dependencies">
+<code class="sig-name descname">dependencies</code><em class="property"> = [('forum', '0002_auto_20200505_1556')]</em><a class="headerlink" href="#forum.migrations.0003_auto_20200505_2007.Migration.dependencies" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="forum.migrations.0003_auto_20200505_2007.Migration.operations">
+<code class="sig-name descname">operations</code><em class="property"> = [&lt;AlterModelOptions  name='articolo', options={'verbose_name_plural': 'Articoli'}&gt;]</em><a class="headerlink" href="#forum.migrations.0003_auto_20200505_2007.Migration.operations" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-forum.migrations.0004_auto_20200507_1457">
+<span id="forum-migrations-0004-auto-20200507-1457-module"></span><h2>forum.migrations.0004_auto_20200507_1457 module<a class="headerlink" href="#module-forum.migrations.0004_auto_20200507_1457" title="Link a questa intestazione">¶</a></h2>
+<dl class="py class">
+<dt id="forum.migrations.0004_auto_20200507_1457.Migration">
+<em class="property">class </em><code class="sig-prename descclassname">forum.migrations.0004_auto_20200507_1457.</code><code class="sig-name descname">Migration</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">app_label</span></em><span class="sig-paren">)</span><a class="headerlink" href="#forum.migrations.0004_auto_20200507_1457.Migration" title="Link a questa definizione">¶</a></dt>
+<dd><blockquote>
+<div><p>Basi: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.migrations.migration.Migration</span></code></p>
+</div></blockquote>
+<dl class="py attribute">
+<dt id="forum.migrations.0004_auto_20200507_1457.Migration.dependencies">
+<code class="sig-name descname">dependencies</code><em class="property"> = [('forum', '0003_auto_20200505_2007')]</em><a class="headerlink" href="#forum.migrations.0004_auto_20200507_1457.Migration.dependencies" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="forum.migrations.0004_auto_20200507_1457.Migration.operations">
+<code class="sig-name descname">operations</code><em class="property"> = [&lt;AddField  model_name='articolo', name='indice', field=&lt;django.db.models.fields.FloatField&gt;&gt;, &lt;AddField  model_name='articolo', name='is_listed', field=&lt;django.db.models.fields.BooleanField&gt;&gt;, &lt;AlterField  model_name='articolo', name='lingua_sorgente', field=&lt;django.db.models.fields.CharField&gt;&gt;]</em><a class="headerlink" href="#forum.migrations.0004_auto_20200507_1457.Migration.operations" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-forum.migrations.0004_auto_20200509_1638">
+<span id="forum-migrations-0004-auto-20200509-1638-module"></span><h2>forum.migrations.0004_auto_20200509_1638 module<a class="headerlink" href="#module-forum.migrations.0004_auto_20200509_1638" title="Link a questa intestazione">¶</a></h2>
+<dl class="py class">
+<dt id="forum.migrations.0004_auto_20200509_1638.Migration">
+<em class="property">class </em><code class="sig-prename descclassname">forum.migrations.0004_auto_20200509_1638.</code><code class="sig-name descname">Migration</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">app_label</span></em><span class="sig-paren">)</span><a class="headerlink" href="#forum.migrations.0004_auto_20200509_1638.Migration" title="Link a questa definizione">¶</a></dt>
+<dd><blockquote>
+<div><p>Basi: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.migrations.migration.Migration</span></code></p>
+</div></blockquote>
+<dl class="py attribute">
+<dt id="forum.migrations.0004_auto_20200509_1638.Migration.dependencies">
+<code class="sig-name descname">dependencies</code><em class="property"> = [('forum', '0003_auto_20200505_2007')]</em><a class="headerlink" href="#forum.migrations.0004_auto_20200509_1638.Migration.dependencies" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="forum.migrations.0004_auto_20200509_1638.Migration.operations">
+<code class="sig-name descname">operations</code><em class="property"> = [&lt;AddField  model_name='articolo', name='indice', field=&lt;django.db.models.fields.FloatField&gt;&gt;, &lt;AddField  model_name='articolo', name='is_listed', field=&lt;django.db.models.fields.BooleanField&gt;&gt;, &lt;AlterField  model_name='articolo', name='lingua_sorgente', field=&lt;django.db.models.fields.CharField&gt;&gt;]</em><a class="headerlink" href="#forum.migrations.0004_auto_20200509_1638.Migration.operations" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-forum.migrations.0005_merge_20200509_1737">
+<span id="forum-migrations-0005-merge-20200509-1737-module"></span><h2>forum.migrations.0005_merge_20200509_1737 module<a class="headerlink" href="#module-forum.migrations.0005_merge_20200509_1737" title="Link a questa intestazione">¶</a></h2>
+<dl class="py class">
+<dt id="forum.migrations.0005_merge_20200509_1737.Migration">
+<em class="property">class </em><code class="sig-prename descclassname">forum.migrations.0005_merge_20200509_1737.</code><code class="sig-name descname">Migration</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">app_label</span></em><span class="sig-paren">)</span><a class="headerlink" href="#forum.migrations.0005_merge_20200509_1737.Migration" title="Link a questa definizione">¶</a></dt>
+<dd><blockquote>
+<div><p>Basi: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.migrations.migration.Migration</span></code></p>
+</div></blockquote>
+<dl class="py attribute">
+<dt id="forum.migrations.0005_merge_20200509_1737.Migration.dependencies">
+<code class="sig-name descname">dependencies</code><em class="property"> = [('forum', '0004_auto_20200507_1457'), ('forum', '0004_auto_20200509_1638')]</em><a class="headerlink" href="#forum.migrations.0005_merge_20200509_1737.Migration.dependencies" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="forum.migrations.0005_merge_20200509_1737.Migration.operations">
+<code class="sig-name descname">operations</code><em class="property"> = []</em><a class="headerlink" href="#forum.migrations.0005_merge_20200509_1737.Migration.operations" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-forum.migrations.0006_articolo_short">
+<span id="forum-migrations-0006-articolo-short-module"></span><h2>forum.migrations.0006_articolo_short module<a class="headerlink" href="#module-forum.migrations.0006_articolo_short" title="Link a questa intestazione">¶</a></h2>
+<dl class="py class">
+<dt id="forum.migrations.0006_articolo_short.Migration">
+<em class="property">class </em><code class="sig-prename descclassname">forum.migrations.0006_articolo_short.</code><code class="sig-name descname">Migration</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">app_label</span></em><span class="sig-paren">)</span><a class="headerlink" href="#forum.migrations.0006_articolo_short.Migration" title="Link a questa definizione">¶</a></dt>
+<dd><blockquote>
+<div><p>Basi: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.migrations.migration.Migration</span></code></p>
+</div></blockquote>
+<dl class="py attribute">
+<dt id="forum.migrations.0006_articolo_short.Migration.dependencies">
+<code class="sig-name descname">dependencies</code><em class="property"> = [('forum', '0005_merge_20200509_1737')]</em><a class="headerlink" href="#forum.migrations.0006_articolo_short.Migration.dependencies" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="forum.migrations.0006_articolo_short.Migration.operations">
+<code class="sig-name descname">operations</code><em class="property"> = [&lt;AddField  model_name='articolo', name='short', field=&lt;django.db.models.fields.PositiveIntegerField&gt;&gt;]</em><a class="headerlink" href="#forum.migrations.0006_articolo_short.Migration.operations" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-forum.migrations.0007_auto_20200515_1804">
+<span id="forum-migrations-0007-auto-20200515-1804-module"></span><h2>forum.migrations.0007_auto_20200515_1804 module<a class="headerlink" href="#module-forum.migrations.0007_auto_20200515_1804" title="Link a questa intestazione">¶</a></h2>
+<dl class="py class">
+<dt id="forum.migrations.0007_auto_20200515_1804.Migration">
+<em class="property">class </em><code class="sig-prename descclassname">forum.migrations.0007_auto_20200515_1804.</code><code class="sig-name descname">Migration</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">app_label</span></em><span class="sig-paren">)</span><a class="headerlink" href="#forum.migrations.0007_auto_20200515_1804.Migration" title="Link a questa definizione">¶</a></dt>
+<dd><blockquote>
+<div><p>Basi: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.migrations.migration.Migration</span></code></p>
+</div></blockquote>
+<dl class="py attribute">
+<dt id="forum.migrations.0007_auto_20200515_1804.Migration.dependencies">
+<code class="sig-name descname">dependencies</code><em class="property"> = [('forum', '0006_articolo_short')]</em><a class="headerlink" href="#forum.migrations.0007_auto_20200515_1804.Migration.dependencies" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="forum.migrations.0007_auto_20200515_1804.Migration.operations">
+<code class="sig-name descname">operations</code><em class="property"> = [&lt;RenameField  model_name='articolo', old_name='short', new_name='lunghezza_minima'&gt;]</em><a class="headerlink" href="#forum.migrations.0007_auto_20200515_1804.Migration.operations" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-forum.migrations.0008_auto_20200515_1808">
+<span id="forum-migrations-0008-auto-20200515-1808-module"></span><h2>forum.migrations.0008_auto_20200515_1808 module<a class="headerlink" href="#module-forum.migrations.0008_auto_20200515_1808" title="Link a questa intestazione">¶</a></h2>
+<dl class="py class">
+<dt id="forum.migrations.0008_auto_20200515_1808.Migration">
+<em class="property">class </em><code class="sig-prename descclassname">forum.migrations.0008_auto_20200515_1808.</code><code class="sig-name descname">Migration</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">app_label</span></em><span class="sig-paren">)</span><a class="headerlink" href="#forum.migrations.0008_auto_20200515_1808.Migration" title="Link a questa definizione">¶</a></dt>
+<dd><blockquote>
+<div><p>Basi: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.migrations.migration.Migration</span></code></p>
+</div></blockquote>
+<dl class="py attribute">
+<dt id="forum.migrations.0008_auto_20200515_1808.Migration.dependencies">
+<code class="sig-name descname">dependencies</code><em class="property"> = [('forum', '0007_auto_20200515_1804')]</em><a class="headerlink" href="#forum.migrations.0008_auto_20200515_1808.Migration.dependencies" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="forum.migrations.0008_auto_20200515_1808.Migration.operations">
+<code class="sig-name descname">operations</code><em class="property"> = [&lt;RenameField  model_name='articolo', old_name='lunghezza_minima', new_name='lunghezza_minima_delle_parole_che_si_vogliono_eliminare'&gt;]</em><a class="headerlink" href="#forum.migrations.0008_auto_20200515_1808.Migration.operations" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-forum.migrations.0009_auto_20200515_1810">
+<span id="forum-migrations-0009-auto-20200515-1810-module"></span><h2>forum.migrations.0009_auto_20200515_1810 module<a class="headerlink" href="#module-forum.migrations.0009_auto_20200515_1810" title="Link a questa intestazione">¶</a></h2>
+<dl class="py class">
+<dt id="forum.migrations.0009_auto_20200515_1810.Migration">
+<em class="property">class </em><code class="sig-prename descclassname">forum.migrations.0009_auto_20200515_1810.</code><code class="sig-name descname">Migration</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">app_label</span></em><span class="sig-paren">)</span><a class="headerlink" href="#forum.migrations.0009_auto_20200515_1810.Migration" title="Link a questa definizione">¶</a></dt>
+<dd><blockquote>
+<div><p>Basi: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.migrations.migration.Migration</span></code></p>
+</div></blockquote>
+<dl class="py attribute">
+<dt id="forum.migrations.0009_auto_20200515_1810.Migration.dependencies">
+<code class="sig-name descname">dependencies</code><em class="property"> = [('forum', '0008_auto_20200515_1808')]</em><a class="headerlink" href="#forum.migrations.0009_auto_20200515_1810.Migration.dependencies" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="forum.migrations.0009_auto_20200515_1810.Migration.operations">
+<code class="sig-name descname">operations</code><em class="property"> = [&lt;RenameField  model_name='articolo', old_name='descrizione', new_name='testo'&gt;]</em><a class="headerlink" href="#forum.migrations.0009_auto_20200515_1810.Migration.operations" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-forum.migrations.0010_auto_20200516_1655">
+<span id="forum-migrations-0010-auto-20200516-1655-module"></span><h2>forum.migrations.0010_auto_20200516_1655 module<a class="headerlink" href="#module-forum.migrations.0010_auto_20200516_1655" title="Link a questa intestazione">¶</a></h2>
+<dl class="py class">
+<dt id="forum.migrations.0010_auto_20200516_1655.Migration">
+<em class="property">class </em><code class="sig-prename descclassname">forum.migrations.0010_auto_20200516_1655.</code><code class="sig-name descname">Migration</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">app_label</span></em><span class="sig-paren">)</span><a class="headerlink" href="#forum.migrations.0010_auto_20200516_1655.Migration" title="Link a questa definizione">¶</a></dt>
+<dd><blockquote>
+<div><p>Basi: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.migrations.migration.Migration</span></code></p>
+</div></blockquote>
+<dl class="py attribute">
+<dt id="forum.migrations.0010_auto_20200516_1655.Migration.dependencies">
+<code class="sig-name descname">dependencies</code><em class="property"> = [('forum', '0009_auto_20200515_1810')]</em><a class="headerlink" href="#forum.migrations.0010_auto_20200516_1655.Migration.dependencies" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="forum.migrations.0010_auto_20200516_1655.Migration.operations">
+<code class="sig-name descname">operations</code><em class="property"> = [&lt;RenameField  model_name='articolo', old_name='testo', new_name='descrizione'&gt;]</em><a class="headerlink" href="#forum.migrations.0010_auto_20200516_1655.Migration.operations" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-forum.migrations">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-forum.migrations" title="Link a questa intestazione">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">WordCommunity</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigazione</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Ricerca veloce</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Vai" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Team1.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/forum.migrations.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

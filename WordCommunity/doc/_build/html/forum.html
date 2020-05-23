@@ -1,0 +1,474 @@
+
+<!DOCTYPE html>
+
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <title>forum package &#8212; WordCommunity 1 documentazione</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/translations.js"></script>
+    <link rel="index" title="Indice" href="genindex.html" />
+    <link rel="search" title="Cerca" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="forum-package">
+<h1>forum package<a class="headerlink" href="#forum-package" title="Link a questa intestazione">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Link a questa intestazione">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="forum.migrations.html">forum.migrations package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="forum.migrations.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="forum.migrations.html#module-forum.migrations.0001_initial">forum.migrations.0001_initial module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="forum.migrations.html#module-forum.migrations.0002_auto_20200505_1556">forum.migrations.0002_auto_20200505_1556 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="forum.migrations.html#module-forum.migrations.0003_auto_20200505_2007">forum.migrations.0003_auto_20200505_2007 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="forum.migrations.html#module-forum.migrations.0004_auto_20200507_1457">forum.migrations.0004_auto_20200507_1457 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="forum.migrations.html#module-forum.migrations.0004_auto_20200509_1638">forum.migrations.0004_auto_20200509_1638 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="forum.migrations.html#module-forum.migrations.0005_merge_20200509_1737">forum.migrations.0005_merge_20200509_1737 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="forum.migrations.html#module-forum.migrations.0006_articolo_short">forum.migrations.0006_articolo_short module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="forum.migrations.html#module-forum.migrations.0007_auto_20200515_1804">forum.migrations.0007_auto_20200515_1804 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="forum.migrations.html#module-forum.migrations.0008_auto_20200515_1808">forum.migrations.0008_auto_20200515_1808 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="forum.migrations.html#module-forum.migrations.0009_auto_20200515_1810">forum.migrations.0009_auto_20200515_1810 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="forum.migrations.html#module-forum.migrations.0010_auto_20200516_1655">forum.migrations.0010_auto_20200516_1655 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="forum.migrations.html#module-forum.migrations">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link a questa intestazione">¶</a></h2>
+</div>
+<div class="section" id="module-forum.admin">
+<span id="forum-admin-module"></span><h2>forum.admin module<a class="headerlink" href="#module-forum.admin" title="Link a questa intestazione">¶</a></h2>
+<dl class="py class">
+<dt id="forum.admin.ArticoloModelAdmin">
+<em class="property">class </em><code class="sig-prename descclassname">forum.admin.</code><code class="sig-name descname">ArticoloModelAdmin</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model</span></em>, <em class="sig-param"><span class="n">admin_site</span></em><span class="sig-paren">)</span><a class="headerlink" href="#forum.admin.ArticoloModelAdmin" title="Link a questa definizione">¶</a></dt>
+<dd><blockquote>
+<div><p>Basi: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.admin.options.ModelAdmin</span></code></p>
+</div></blockquote>
+<dl class="py attribute">
+<dt id="forum.admin.ArticoloModelAdmin.list_display">
+<code class="sig-name descname">list_display</code><em class="property"> = ['titolo', 'autore_articolo']</em><a class="headerlink" href="#forum.admin.ArticoloModelAdmin.list_display" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="forum.admin.ArticoloModelAdmin.list_filter">
+<code class="sig-name descname">list_filter</code><em class="property"> = ['data_creazione']</em><a class="headerlink" href="#forum.admin.ArticoloModelAdmin.list_filter" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="forum.admin.ArticoloModelAdmin.media">
+<em class="property">property </em><code class="sig-name descname">media</code><a class="headerlink" href="#forum.admin.ArticoloModelAdmin.media" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="forum.admin.ArticoloModelAdmin.model">
+<code class="sig-name descname">model</code><a class="headerlink" href="#forum.admin.ArticoloModelAdmin.model" title="Link a questa definizione">¶</a></dt>
+<dd><p>alias per <a class="reference internal" href="#forum.models.Articolo" title="forum.models.Articolo"><code class="xref py py-class docutils literal notranslate"><span class="pre">forum.models.Articolo</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="forum.admin.ArticoloModelAdmin.search_fields">
+<code class="sig-name descname">search_fields</code><em class="property"> = ['titolo', 'autore_articolo__username']</em><a class="headerlink" href="#forum.admin.ArticoloModelAdmin.search_fields" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-forum.apps">
+<span id="forum-apps-module"></span><h2>forum.apps module<a class="headerlink" href="#module-forum.apps" title="Link a questa intestazione">¶</a></h2>
+<dl class="py class">
+<dt id="forum.apps.ForumConfig">
+<em class="property">class </em><code class="sig-prename descclassname">forum.apps.</code><code class="sig-name descname">ForumConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app_name</span></em>, <em class="sig-param"><span class="n">app_module</span></em><span class="sig-paren">)</span><a class="headerlink" href="#forum.apps.ForumConfig" title="Link a questa definizione">¶</a></dt>
+<dd><blockquote>
+<div><p>Basi: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.apps.config.AppConfig</span></code></p>
+</div></blockquote>
+<dl class="py attribute">
+<dt id="forum.apps.ForumConfig.name">
+<code class="sig-name descname">name</code><em class="property"> = 'forum'</em><a class="headerlink" href="#forum.apps.ForumConfig.name" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-forum.models">
+<span id="forum-models-module"></span><h2>forum.models module<a class="headerlink" href="#module-forum.models" title="Link a questa intestazione">¶</a></h2>
+<dl class="py class">
+<dt id="forum.models.Articolo">
+<em class="property">class </em><code class="sig-prename descclassname">forum.models.</code><code class="sig-name descname">Articolo</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#forum.models.Articolo" title="Link a questa definizione">¶</a></dt>
+<dd><blockquote>
+<div><p>Basi: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+</div></blockquote>
+<p>modello per l’articolo. La descrizione viene salvata in un textfield ma è in un formato JSon, questo comporta
+operazioni di load e dump prima di prendersi le parole e di salvarle rispettivamente</p>
+<dl class="py exception">
+<dt id="forum.models.Articolo.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#forum.models.Articolo.DoesNotExist" title="Link a questa definizione">¶</a></dt>
+<dd><blockquote>
+<div><p>Basi: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="forum.models.Articolo.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#forum.models.Articolo.MultipleObjectsReturned" title="Link a questa definizione">¶</a></dt>
+<dd><blockquote>
+<div><p>Basi: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="forum.models.Articolo.autore_articolo">
+<code class="sig-name descname">autore_articolo</code><a class="headerlink" href="#forum.models.Articolo.autore_articolo" title="Link a questa definizione">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="forum.models.Articolo.autore_articolo_id">
+<code class="sig-name descname">autore_articolo_id</code><a class="headerlink" href="#forum.models.Articolo.autore_articolo_id" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="forum.models.Articolo.data_creazione">
+<code class="sig-name descname">data_creazione</code><a class="headerlink" href="#forum.models.Articolo.data_creazione" title="Link a questa definizione">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="forum.models.Articolo.descrizione">
+<code class="sig-name descname">descrizione</code><a class="headerlink" href="#forum.models.Articolo.descrizione" title="Link a questa definizione">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="forum.models.Articolo.getDescrizione">
+<code class="sig-name descname">getDescrizione</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#forum.models.Articolo.getDescrizione" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="forum.models.Articolo.get_absolute_url">
+<code class="sig-name descname">get_absolute_url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#forum.models.Articolo.get_absolute_url" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="forum.models.Articolo.get_next_by_data_creazione">
+<code class="sig-name descname">get_next_by_data_creazione</code><span class="sig-paren">(</span><em class="sig-param">*</em>, <em class="sig-param">field=&lt;django.db.models.fields.DateTimeField: data_creazione&gt;</em>, <em class="sig-param">is_next=True</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#forum.models.Articolo.get_next_by_data_creazione" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="forum.models.Articolo.get_previous_by_data_creazione">
+<code class="sig-name descname">get_previous_by_data_creazione</code><span class="sig-paren">(</span><em class="sig-param">*</em>, <em class="sig-param">field=&lt;django.db.models.fields.DateTimeField: data_creazione&gt;</em>, <em class="sig-param">is_next=False</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#forum.models.Articolo.get_previous_by_data_creazione" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="forum.models.Articolo.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#forum.models.Articolo.id" title="Link a questa definizione">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="forum.models.Articolo.indice">
+<code class="sig-name descname">indice</code><a class="headerlink" href="#forum.models.Articolo.indice" title="Link a questa definizione">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="forum.models.Articolo.is_listed">
+<code class="sig-name descname">is_listed</code><a class="headerlink" href="#forum.models.Articolo.is_listed" title="Link a questa definizione">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="forum.models.Articolo.lingua_sorgente">
+<code class="sig-name descname">lingua_sorgente</code><a class="headerlink" href="#forum.models.Articolo.lingua_sorgente" title="Link a questa definizione">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="forum.models.Articolo.lunghezza_minima_delle_parole_che_si_vogliono_eliminare">
+<code class="sig-name descname">lunghezza_minima_delle_parole_che_si_vogliono_eliminare</code><a class="headerlink" href="#forum.models.Articolo.lunghezza_minima_delle_parole_che_si_vogliono_eliminare" title="Link a questa definizione">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="forum.models.Articolo.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#forum.models.Articolo.objects" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="forum.models.Articolo.titolo">
+<code class="sig-name descname">titolo</code><a class="headerlink" href="#forum.models.Articolo.titolo" title="Link a questa definizione">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="forum.models.strToDict">
+<code class="sig-prename descclassname">forum.models.</code><code class="sig-name descname">strToDict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">s</span></em><span class="sig-paren">)</span><a class="headerlink" href="#forum.models.strToDict" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-forum.tests">
+<span id="forum-tests-module"></span><h2>forum.tests module<a class="headerlink" href="#module-forum.tests" title="Link a questa intestazione">¶</a></h2>
+<dl class="py class">
+<dt id="forum.tests.ArticoloTestCase">
+<em class="property">class </em><code class="sig-prename descclassname">forum.tests.</code><code class="sig-name descname">ArticoloTestCase</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">methodName</span><span class="o">=</span><span class="default_value">'runTest'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#forum.tests.ArticoloTestCase" title="Link a questa definizione">¶</a></dt>
+<dd><blockquote>
+<div><p>Basi: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.test.testcases.TestCase</span></code></p>
+</div></blockquote>
+<p>Questa classe serve per testare le funzionalità di articolo</p>
+<dl class="py method">
+<dt id="forum.tests.ArticoloTestCase.setUp">
+<code class="sig-name descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#forum.tests.ArticoloTestCase.setUp" title="Link a questa definizione">¶</a></dt>
+<dd><p>Creiamo due utenti, due articoli e due user profile</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="forum.tests.ArticoloTestCase.test_CreaArticolo">
+<code class="sig-name descname">test_CreaArticolo</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#forum.tests.ArticoloTestCase.test_CreaArticolo" title="Link a questa definizione">¶</a></dt>
+<dd><p>Verifichiamo che nella creazione articolo i campi obbligatori siano necessari
+per la registrazione di un articolo
+Ci accertiamo che il template utilizzato sia quello giusto e che lo status code sia 200
+Proviamo ad inserire un articolo con credenziali valide e ci accertiamo che
+il tamplate utilizzato sia quello corretto</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="forum.tests.ArticoloTestCase.test_confrontaArticoliView">
+<code class="sig-name descname">test_confrontaArticoliView</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#forum.tests.ArticoloTestCase.test_confrontaArticoliView" title="Link a questa definizione">¶</a></dt>
+<dd><p>Controlliamo che i due articoli creati nel setUp posso essre confrontati da un utente
+ma non da un guest</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="forum.tests.ArticoloTestCase.test_indice">
+<code class="sig-name descname">test_indice</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#forum.tests.ArticoloTestCase.test_indice" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="forum.tests.ArticoloTestCase.test_indice_base">
+<code class="sig-name descname">test_indice_base</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#forum.tests.ArticoloTestCase.test_indice_base" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="forum.tests.ArticoloTestCase.test_scegliArticoliView">
+<code class="sig-name descname">test_scegliArticoliView</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#forum.tests.ArticoloTestCase.test_scegliArticoliView" title="Link a questa definizione">¶</a></dt>
+<dd><p>si controlla che un utente registrato possa visualizzare corettamente
+la scelta degli atricoli da confrontare mentre un guest no</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="forum.tests.ArticoloTestCase.test_visualizzaArticolo">
+<code class="sig-name descname">test_visualizzaArticolo</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#forum.tests.ArticoloTestCase.test_visualizzaArticolo" title="Link a questa definizione">¶</a></dt>
+<dd><p>Ci accertiamo che l’utente riesca a visualizzare il suo articolo creato</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="forum.tests.ArticoloTestCase.test_visualizzaClassifica">
+<code class="sig-name descname">test_visualizzaClassifica</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#forum.tests.ArticoloTestCase.test_visualizzaClassifica" title="Link a questa definizione">¶</a></dt>
+<dd><p>Ci accertiamo che l’utente sia registrato al sito e che possa visualizzare la
+classifica in maniera corretta, tramite il template corretto
+poi si controlla che un utente non registrato non possa visualizzare la classifica</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-forum.textProcessor">
+<span id="forum-textprocessor-module"></span><h2>forum.textProcessor module<a class="headerlink" href="#module-forum.textProcessor" title="Link a questa intestazione">¶</a></h2>
+<dl class="py function">
+<dt id="forum.textProcessor.getIndex">
+<code class="sig-prename descclassname">forum.textProcessor.</code><code class="sig-name descname">getIndex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">d</span></em><span class="sig-paren">)</span><a class="headerlink" href="#forum.textProcessor.getIndex" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="forum.textProcessor.textToDict">
+<code class="sig-prename descclassname">forum.textProcessor.</code><code class="sig-name descname">textToDict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em>, <em class="sig-param"><span class="n">short</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#forum.textProcessor.textToDict" title="Link a questa definizione">¶</a></dt>
+<dd><p>la punteggiatura viene eliminata
+:param text: testo come stringa
+:param short: lunghezza delle parole da eliminare quando si crea l’articolo
+:return: è un dizionario contentente come chiave la parola del testo e come valore la  sua frequenza</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-forum.urls">
+<span id="forum-urls-module"></span><h2>forum.urls module<a class="headerlink" href="#module-forum.urls" title="Link a questa intestazione">¶</a></h2>
+</div>
+<div class="section" id="module-forum.views">
+<span id="forum-views-module"></span><h2>forum.views module<a class="headerlink" href="#module-forum.views" title="Link a questa intestazione">¶</a></h2>
+<dl class="py class">
+<dt id="forum.views.CreaArticolo">
+<em class="property">class </em><code class="sig-prename descclassname">forum.views.</code><code class="sig-name descname">CreaArticolo</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#forum.views.CreaArticolo" title="Link a questa definizione">¶</a></dt>
+<dd><blockquote>
+<div><p>Basi: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.views.generic.edit.CreateView</span></code></p>
+</div></blockquote>
+<p>tramite la CreateView di Django, permette la creazione dell’articolo
+i campi che l’utente deve riempire sono il titolo,la descrizione(che è il testo dell’articolo)
+e la lunghezza_minima_delle_parole_che_si_vogliono_eliminare che di default è 0</p>
+<dl class="py attribute">
+<dt id="forum.views.CreaArticolo.fields">
+<code class="sig-name descname">fields</code><em class="property"> = ['titolo', 'descrizione', 'lunghezza_minima_delle_parole_che_si_vogliono_eliminare']</em><a class="headerlink" href="#forum.views.CreaArticolo.fields" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="forum.views.CreaArticolo.form_valid">
+<code class="sig-name descname">form_valid</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">form</span></em><span class="sig-paren">)</span><a class="headerlink" href="#forum.views.CreaArticolo.form_valid" title="Link a questa definizione">¶</a></dt>
+<dd><p>If the form is valid, save the associated model.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="forum.views.CreaArticolo.get_success_url">
+<code class="sig-name descname">get_success_url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#forum.views.CreaArticolo.get_success_url" title="Link a questa definizione">¶</a></dt>
+<dd><p>Return the URL to redirect to after processing a valid form.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="forum.views.CreaArticolo.model">
+<code class="sig-name descname">model</code><a class="headerlink" href="#forum.views.CreaArticolo.model" title="Link a questa definizione">¶</a></dt>
+<dd><p>alias per <a class="reference internal" href="#forum.models.Articolo" title="forum.models.Articolo"><code class="xref py py-class docutils literal notranslate"><span class="pre">forum.models.Articolo</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="forum.views.CreaArticolo.template_name">
+<code class="sig-name descname">template_name</code><em class="property"> = 'forum/crea_articolo.html'</em><a class="headerlink" href="#forum.views.CreaArticolo.template_name" title="Link a questa definizione">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="forum.views.confrontaArticoliView">
+<code class="sig-prename descclassname">forum.views.</code><code class="sig-name descname">confrontaArticoliView</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em>, <em class="sig-param"><span class="n">pk1</span></em>, <em class="sig-param"><span class="n">pk2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#forum.views.confrontaArticoliView" title="Link a questa definizione">¶</a></dt>
+<dd><p>view per confrontare due articoli. Per poter essere visualizzato bene sul template andiamo a costruire
+una lista di liste. Le liste interne sono strutturate così [frequenza_art1, termine, frequenza_art2 ]
+:param request:
+:param pk1:
+:param pk2:
+:return:</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="forum.views.scegliArticoliView">
+<code class="sig-prename descclassname">forum.views.</code><code class="sig-name descname">scegliArticoliView</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#forum.views.scegliArticoliView" title="Link a questa definizione">¶</a></dt>
+<dd><p>view per selezionare due articoli da confrontare</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="forum.views.visualizzaArticolo">
+<code class="sig-prename descclassname">forum.views.</code><code class="sig-name descname">visualizzaArticolo</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em>, <em class="sig-param"><span class="n">pk</span></em><span class="sig-paren">)</span><a class="headerlink" href="#forum.views.visualizzaArticolo" title="Link a questa definizione">¶</a></dt>
+<dd><p>view per visualizzare i dettagli di un articolo
+:param pk: id dell’articolo di cui visualizzare i dettagli</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="forum.views.visualizzaClassifica">
+<code class="sig-prename descclassname">forum.views.</code><code class="sig-name descname">visualizzaClassifica</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#forum.views.visualizzaClassifica" title="Link a questa definizione">¶</a></dt>
+<dd><p>view per mostrare tutte le parole presenti negli articoli del sito con le loro frequenze totali</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-forum">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-forum" title="Link a questa intestazione">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">WordCommunity</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigazione</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Ricerca veloce</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Vai" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Team1.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/forum.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

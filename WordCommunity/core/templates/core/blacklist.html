@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static '/css/blacklist.css' %}" />
+    <div class="card shadow mb-4">
+        <!-- Card Header - Dropdown -->
+        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+            <h2 class="m-0 font-weight-bold ">Blacklist di {{user}} </h2>
+        </div>
+        <!-- Card Body -->
+        <div>
+        {% csrf_token %}
+            <table  id="table" class="table table-striped table-bordered" style="width:100%">
+                <thead>
+                <tr>
+                    <th scope="col-0">Termini:</th>
+                    <th scope="col-1">Azioni:</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for p in wordlist %}
+                    <tr scope="row">
+                        <td  class="parola">{{p}}</td>
+                        <td><a href="{% url 'blacklist' pk=user.profile.id %}" class="btn btn-danger"> <i class="fa fa-trash"></i></a></td>
+                    </tr>
+
+                {% endfor %}
+                </tbody>
+            </table>
+            <a class="btn btn-primary" href="{% url 'blacklist-modifica' pk=id %}">Add</a>
+        </div>
+    </div>
+
+    <div id="dialog" title="Confirmation Required" style="display: none">
+        Are you sure about this?
+    </div>
+
+
+{% endblock content %}
+
+{% block javascript %}
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script>
+    //Creazione e gestione della modale per la conferma dell'eliminazione della parola nella blacklist
+        $(document).ready(function () {
+            $("#dialog").dialog({
+                autoOpen: false,
+                modal:true
+            });
+
+            var $dialog = $(".ui-dialog");
+  $dialog.addClass("modal-content");
+  $dialog.find(".ui-dialog-titlebar").addClass("modal-header p-3 mb-2 bg-primary text-white").find(".ui-button").addClass("close").text("x");
+  $dialog.find(".ui-dialog-content").addClass("modal-body");
+  $dialog.find(".ui-dialog-buttonpane").addClass("ciao");
+  
+        });
+    </script>
+
+    <script>
+    //Creazione della tabella con i relativi bottoni e la loro funzionalità
+        $(document).ready(function () {
+            $(function() {
+                $("#table").on('click', '.btn', function(e) {
+                    e.preventDefault()
+                    var to_page = $(this).attr('href')
+                    var currentRow = $(this).closest("tr");
+                    var parola=currentRow.find("td:eq(0)").html();
+
+                    //Gestione della modale: al premere dell'OK parte la chiamata ajax che va ad eliminare la blackword
+                    $("#dialog").dialog({
+                        buttons: {
+                            "OK": function() {
+                                $.ajax({
+                                    type:'POST',
+                                    url:'delete/',
+                                    data: {
+                                        parola:parola,
+                                        csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val()
+                                    },
+                                    success:function (data) {
+                                      
+                                    }
+
+                                })
+                                $(this).dialog("close");
+                                window.location.href = to_page;
+
+                            },
+                            //Al premere di cancel non si applicano le modifiche
+                            "Cancel":function(){
+                                e.preventDefault()
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+                    $("#dialog").dialog("open");
+
+                });
+
+            });
+
+        });
+    </script>
+{% endblock %}

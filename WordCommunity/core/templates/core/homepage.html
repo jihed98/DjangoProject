@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static '/css/homepage.css' %}" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+    <h1 class="d-flex justify-content-center">Home</h1>
+    <a href="forum/articolo/confronta/" class="btn btn-success float-right">Confronta Articolo</a></button>
+    <a href="forum/nuovo-articolo/" class="btn btn-success float-left" >Add Articolo</a></button>
+    <br>
+    <br>
+    <br>
+    {% for articolo in lista_articoli %}
+        <div class="card shadow-sm mb-4" style=" border-radius: 1.5rem;">
+            <div class="card-header py-3" style="border-radius: 1.5rem;border-bottom:none">
+                <h6 class="m-0 font-weight-bold text-primary"><a href="{{articolo.get_absolute_url}}">{{articolo.titolo}}</a></h6>
+                {% if articolo.autore_articolo.pk == request.user.pk %}
+                    <h8 class="card-subtitle mb-2 text-muted">Creato da: <a href="{% url 'user_profile' username=request.user.username %}">@{{articolo.autore_articolo}}</a></h8>
+                {% else %}
+                    <h8 class="card-subtitle mb-2 text-muted">Creato da: <a href="{% url 'altriuser-profile' username=articolo.autore_articolo %}">@{{articolo.autore_articolo}}</a></h8>
+                {% endif %}
+                <p class="text-muted">{{ articolo.data_creazione|timesince }} fa</p>
+            </div>
+        </div>
+    {% endfor %}
+
+
+{% endblock content %}
